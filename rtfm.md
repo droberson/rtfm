@@ -1,8 +1,10 @@
-* Screenshots
-** OS X
-Command-Shift-3: Full screen to desktop
-Command-Shift-4, select an area: Area to desktop
-Command-Shift-4, space, click a window: Window to desktop
-Command-Control-Shift-3: Full screen to clipboard
-Command-Control-Shift-4, select an area: Area to clipboard
-Command-Control-Shift-4, space, click a window: Window to clipboard
+# Screenshots
+
+* **OS X**
+- Command-Shift-3: Full screen to desktop
+- Command-Shift-4, select an area: Area to desktop
+- Command-Shift-4, space, click a window: Window to desktop
+- Command-Control-Shift-3: Full screen to clipboard
+- Command-Control-Shift-4, select an area: Area to clipboard
+- Command-Control-Shift-4, space, click a window: Window to clipboard
+
