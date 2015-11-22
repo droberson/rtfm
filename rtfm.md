@@ -1,6 +1,6 @@
 # Screenshots
 
-* **OS X**
+**OS X**
 - Command-Shift-3: Full screen to desktop
 - Command-Shift-4, select an area: Area to desktop
 - Command-Shift-4, space, click a window: Window to desktop
