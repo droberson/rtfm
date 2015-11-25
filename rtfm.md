@@ -7,6 +7,12 @@
 - Command-Control-Shift-4, select an area: Area to clipboard
 - Command-Control-Shift-4, space, click a window: Window to clipboard
 
+## Windows
+- PrtScr: full screenshot to clipboard
+- Windows-PrtScr: full screen to "Screenshots" folder
+- Alt-PrtScr: active window to clipboard
+
+
 # OS X Power Saving
 - Temporarily turn off sleep
 ```
