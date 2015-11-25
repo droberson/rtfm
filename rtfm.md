@@ -48,3 +48,23 @@ grep -v -e term1 -e term2 <file>
 ```
 grep -Hn term
 ```
+
+# tac (backwards cat)
+
+This is part of the *GNU coreutils* package. It reads and prints a
+file from the bottom up. VERY useful for logfiles.
+
+- Linux
+```
+tac logfile | less
+```
+
+- OS X / BSD
+```
+gtac logfile | less
+```
+
+- BSD *tail -r*
+```
+tail -r logfile | less
+```
