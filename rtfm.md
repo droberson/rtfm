@@ -93,10 +93,10 @@ tail -r logfile | less
 # Using Nmap to generate lists of IP addresses
 
 - Sometimes a tool will not allow you use CIDR notation to express
-network addresses, or will require you to provide it a list of IP
-addresses. Nmap provides the -sL (list scan) option that can generate
-these lists easily, complete with host and network exclusion, ranges,
-and so on:
+  network addresses, or will require you to provide it a list of IP
+  addresses. Nmap provides the -sL (list scan) option that can generate
+  these lists easily, complete with host and network exclusion, ranges,
+  and so on:
 
 ```
 nmap -n -sL 10.10.0.0/22 10.100.0.32/27 192.168.0.2-254 \
@@ -106,13 +106,24 @@ nmap -n -sL 10.10.0.0/22 10.100.0.32/27 192.168.0.2-254 \
 ```
 
 - You can also omit the -n flag and easily resolve ranges of IP
-addresses. If an IP address resolves, it will display "hostname (ip
-address)". If it does not resolve, it will simply display the IP
-address:
-
+  addresses. If an IP address resolves, it will display "hostname (ip
+  address)". If it does not resolve, it will simply display the IP
+  address:
 
 ```
 nmap -sL 10.10.0.0/22 | awk {'print $5, $6'}
+```
+
+- Sometimes, you may need to use a different DNS server rather than
+  whatever is in your /etc/resolv.conf to mass resolve a list of IPs:
+
+```
+nmap -n -sL 10.10.0.0/24      \
+| grep "Nmap scan report for" \
+| awk {'print $5'}            \
+| while read ip; 
+   do host $ip ALTERNATEDNSSERVERGOESHERE | grep "domain name pointer";
+done
 ```
 
 # find
