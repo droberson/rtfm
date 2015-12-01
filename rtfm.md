@@ -227,3 +227,11 @@ Further reading:
 
  https://msdn.microsoft.com/en-us/library/ms537503%28v=vs.85%29.aspx
 
+# Command Line Equivalents from Linux to Windows
+
+| Purpose      		    | Linux	| Windows               |
+| ------------------------- | ----------| --------------------- |
+| Directory list    	    | ls	| dir                   |
+| Display file's contents   | cat       | type                  |
+| Display file with a pager | less file | type file &#124; more |
+| Copy file    	      	    | cp 	| copy                  |
