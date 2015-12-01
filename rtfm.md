@@ -139,3 +139,43 @@ find / -perm -04000 -exec ls -l {} \; 2>/dev/null
 ```
 find / -type f -perm -o=w -exec ls -l {} \; 2>/dev/null
 ```
+
+# curl
+
+- Get HTTP headers from a site:
+```
+curl -I http://www.google.com
+```
+
+- Display info about your public IP:
+```
+curl ipinfo.io
+```
+
+- Extract email addresses from URL:
+```
+curl http://www.foo.com/whatever.html 2>/dev/null | grep -Eio '\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b' | sort | uniq
+```
+
+- Extract anchors from URL (thanks bashitsu!):
+```
+curl http://www.foo.com 2>/dev/null |grep -Eio "(src|href) *= *[\"'][^\"']*" |grep -Eo "[\"'].*" | cut -c2- | sort | uniq
+```
+
+- Extract a set of unique words from a site. This is sometimes helpful
+  in making dictionaries to attack a target with. This requires the
+  'html2text' utility:
+```
+curl http://www.foo.com 2>/dev/null | html2text | tr " " "\n" | sort | uniq
+```
+
+- Attempt to pull names from a site. This isn't foolproof, as the
+  output will still have to be scoured. (Thanks again, bashitsu!):
+```
+CAPWORD="([A-Z]{1}['a-z]+)"; curl http://www.foo.com 2>/dev/null | grep -Eo -e "$CAPWORD $CAPWORD" -e "$CAPWORD [A-Z]{1} $CAPWORD" -e "$CAPWORD $CAPWORD $CAPWORD" | sort | uniq -c
+```
+
+- Extract phone numbers from a site:
+```
+curl http://www.foo.com 2>/dev/null |html2text| grep -io '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -.]\?[0-9]\{3\}[ -.]\?\([0-9]\{4\}\|[A-Z]\{4\}\)'
+```
