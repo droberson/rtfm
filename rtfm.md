@@ -74,3 +74,16 @@ gtac logfile | less
 ```
 tail -r logfile | less
 ```
+
+# Using Nmap to generate lists of IP addresses
+
+Sometimes a tool will not allow you use CIDR notation to express
+network addresses, or will require you to provide it a list of IP
+addresses. Nmap provides the -sL (list scan) option that can generate
+these lists easily, complete with host and network exclusion, ranges,
+and so on:
+
+```
+nmap -n -sL 10.10.0.0/22 10.100.0.32/27 192.168.0.2-254 --exclude 192.168.0.250,10.10.0.3.254 | grep "Nmap scan report for" | awk {'print $5'}
+```
+
