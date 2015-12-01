@@ -90,3 +90,13 @@ nmap -n -sL 10.10.0.0/22 10.100.0.32/27 192.168.0.2-254 \
             | awk {'print $5'}
 ```
 
+You can also omit the -n flag and easily resolve ranges of IP
+addresses. If an IP address resolves, it will display "hostname (ip
+address)". If it does not resolve, it will simply display the IP
+address:
+
+
+```
+nmap -sL 10.10.0.0/22 | awk {'print $5, $6'}
+```
+
