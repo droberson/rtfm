@@ -18,10 +18,12 @@
 ```
 sudo pmset noidle
 ```
+
 - Turn off sleep
 ```
 sudo pmset sleep 0
 ```
+
 - Sleep after 15 minutes
 ```
 sudo pmset sleep 15
@@ -35,17 +37,17 @@ mknod /tmp/datapipe p
 ```
 
 # grep
-- multiple search terms:
+- Multiple search terms:
 ```
 grep -e term1 -e term2 <file>
 ```
 
-- exclude term:
+- Exclude term:
 ```
 grep -v term <file>
 ```
 
-- exclude multiple terms:
+- Exclude multiple terms:
 ```
 grep -v -e term1 -e term2 <file>
 ```
@@ -162,7 +164,9 @@ curl http://www.foo.com/whatever.html 2>/dev/null        \
 | sort | uniq
 ```
 
-- Extract anchors from URL (thanks bashitsu!):
+- Extract anchors from URL (thanks bashitsu!). This is very useful for
+  getting a basic layout of a site, fingerprinting software, and much
+  more:
 ```
 curl http://www.foo.com 2>/dev/null       \
 | grep -Eio "(src|href) *= *[\"'][^\"']*" \
@@ -194,3 +198,29 @@ curl http://www.foo.com 2>/dev/null \
 | html2text                         \
 | grep -io '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -.]\?[0-9]\{3\}[ -.]\?\([0-9]\{4\}\|[A-Z]\{4\}\)'
 ```
+
+# Windows Platform Tokens
+
+These strings are found in user agent strings in browsers amongst
+other places and can be used to identify a machine's operating system:
+
+Platform Token  | Description
+----------------+------------
+Windows NT 6.3  | Windows 8.1
+Windows NT 6.2  | Windows 8
+Windows NT 6.1  | Windows 7
+Windows NT 6.0  | Windows Vista
+Windows NT 5.2  | Windows Server 2003 or Windows XP x64 Edition
+Windows NT 5.1  | Windows XP
+Windows NT 5.01 | Windows 2000 SP1
+Windows NT 5.0  | Windows 2000
+Windows NT 4.0  | Microsoft Windows NT 4.0
+Windows 98      | Windows ME (Millennium Edition)
+Win 9x 4.90     | Windows ME
+Windows 98      | Windows 98
+Windows 95      | Windows 95
+Windows CE      | Windows CE
+
+Further reading:
+ https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions
+ https://msdn.microsoft.com/en-us/library/ms537503%28v=vs.85%29.aspx
