@@ -60,6 +60,16 @@ grep -Hn term
 grep -i term <file>
 ```
 
+- Strip # comments:
+```
+grep -v "^#" <file>
+```
+
+- Strip ; comments:
+```
+grep -v "^;" <file>
+```
+
 # tac (backwards cat)
 
 This is part of the *GNU coreutils* package. It reads and prints a
