@@ -129,15 +129,18 @@ done
 # find
 
 - Find suid binaries:
-
 ```
 find / -perm -04000 -exec ls -l {} \; 2>/dev/null
 ```
 
 - Find world-writable files:
-
 ```
 find / -type f -perm -o=w -exec ls -l {} \; 2>/dev/null
+```
+
+- Find world-writable directories:
+```
+find / -type d -perm -o=w -exec ls -l {} \; 2>/dev/null
 ```
 
 # curl
