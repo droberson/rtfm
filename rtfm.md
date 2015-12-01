@@ -84,6 +84,9 @@ these lists easily, complete with host and network exclusion, ranges,
 and so on:
 
 ```
-nmap -n -sL 10.10.0.0/22 10.100.0.32/27 192.168.0.2-254 --exclude 192.168.0.250,10.10.0.3.254 | grep "Nmap scan report for" | awk {'print $5'}
+nmap -n -sL 10.10.0.0/22 10.100.0.32/27 192.168.0.2-254 \
+            --exclude 192.168.0.250,10.10.0.3.254       \
+            | grep "Nmap scan report for"               \
+            | awk {'print $5'}
 ```
 
