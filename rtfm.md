@@ -100,3 +100,16 @@ address:
 nmap -sL 10.10.0.0/22 | awk {'print $5, $6'}
 ```
 
+# find
+
+Find suid binaries:
+
+```
+find / -perm -04000 -exec ls -l {} \; 2>/dev/null
+```
+
+Find world-writable files:
+
+```
+find / -type f -perm -o=w -exec ls -l {} \; 2>/dev/null
+```
