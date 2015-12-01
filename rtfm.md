@@ -205,7 +205,7 @@ These strings are found in user agent strings in browsers amongst
 other places and can be used to identify a machine's operating system:
 
 | Platform Token  | Description                                   |
-|-----------------+-----------------------------------------------|
+| --------------- | --------------------------------------------- |
 | Windows NT 6.3  | Windows 8.1                                   |
 | Windows NT 6.2  | Windows 8                                     |
 | Windows NT 6.1  | Windows 7                                     |
