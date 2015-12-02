@@ -240,3 +240,11 @@ Further reading:
 | Show running processes    | ps          | tasklist              |
 | Search for strings        | grep        | findstr &#124; find   |
 | Terminate a process       | kill        | taskkill              |
+| Change file attributes    | chmod       | attrib                |
+| Clear screen              | clear       | cls                   |
+| Compare files             | diff        | fc                    |
+| Show disk usage           | df          | freedisk              |
+| Show memory usage         | free        | mem                   |
+
+Further reading on Windows command line nonsense:
+- http://ss64.com/nt/
