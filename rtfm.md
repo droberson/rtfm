@@ -145,6 +145,20 @@ find / -type f -perm -o=w -exec ls -l {} \; 2>/dev/null
 find / -type d -perm -o=w -exec ls -l {} \; 2>/dev/null
 ```
 
+- Find files with "passwd" in their names. This throws up a lot of
+  false positives in most cases, but sometimes you can find a readable
+  hashes to crack:
+```
+find / -name "*passwd*" -type f -exec ls -l {} \; 2>/dev/null
+```
+
+- Find files modified today and this week respectively:
+```
+find / -mtime -1 -exec ls -l {} \; 2>/dev/null
+find / -mtime -7 -exec ls -l {} \; 2>/dev/null
+```
+
+
 # curl
 
 - Get HTTP headers from a site:
