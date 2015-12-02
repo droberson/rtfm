@@ -223,15 +223,20 @@ other places and can be used to identify a machine's operating system:
 
 Further reading:
 
- https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions
-
- https://msdn.microsoft.com/en-us/library/ms537503%28v=vs.85%29.aspx
+- https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions
+- https://msdn.microsoft.com/en-us/library/ms537503%28v=vs.85%29.aspx
 
 # Command Line Equivalents from Linux to Windows
 
-| Purpose      		    | Linux	| Windows               |
-| ------------------------- | ----------| --------------------- |
-| Directory list    	    | ls	| dir                   |
-| Display file's contents   | cat       | type                  |
-| Display file with a pager | less file | type file &#124; more |
-| Copy file    	      	    | cp 	| copy                  |
+| Purpose      		    | Linux	  | Windows               |
+| ------------------------- | ----------- | --------------------- |
+| Directory list    	    | ls	  | dir                   |
+| Display file's contents   | cat         | type                  |
+| Display file with a pager | less file   | type file &#124; more |
+| Copy file    	      	    | cp 	  | copy                  |
+| Delete file		    | rm	  | del	                  |
+| Rename file		    | mv	  | ren	                  |
+| Show network interfaces   | ifconfig -a | ipconfig /all         |
+| Show running processes    | ps          | tasklist              |
+| Search for strings        | grep        | findstr &#124; find   |
+| Terminate a process       | kill        | taskkill              |
