@@ -320,3 +320,20 @@ Further reading:
 
 Further reading on Windows command line nonsense:
 - http://ss64.com/nt/
+
+# Copy and paste using GNU screen
+
+Sometimes you may need to copy and paste terminal output, but you
+either do not have gpm installed or even have a mouse. Here's how to
+copy and paste using screen:
+
+```
+screen
+`command you need output from`
+Control+a, [
+move cursor to the start position using Emacs movement keystrokes or arrows
+Hit space to set starting position
+select text you want to copy using arrows or Emacs keystrokes
+Hit space to set ending position
+Control+a, ] will paste
+```
