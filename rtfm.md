@@ -339,3 +339,10 @@ select text you want to copy using arrows or Emacs keystrokes
 Hit space to set ending position
 Control+a, ] will paste
 ```
+
+# mysql
+
+- Show userlist:
+```
+select user,host,password from mysql.user;
+```
