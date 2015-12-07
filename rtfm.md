@@ -346,3 +346,8 @@ Control+a, ] will paste
 ```
 select user,host,password from mysql.user;
 ```
+
+- Read files from local filesystem:
+```
+select load_file("/etc/passwd");
+```
