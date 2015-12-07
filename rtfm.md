@@ -12,6 +12,8 @@
 - Windows-PrtScr: full screen to "Screenshots" folder
 - Alt-PrtScr: active window to clipboard
 
+## KDE
+- Use 'ksnapshot' utility
 
 # OS X Power Saving
 - Temporarily turn off sleep
