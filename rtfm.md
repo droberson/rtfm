@@ -357,7 +357,8 @@ select load_file("/etc/passwd");
 bash and zsh are different, but these keystrokes work for both. They
 are useful to know in case you are on a jacked up terminal, your
 keyboard is missing certain keys, and they are just plain faster once
-you get the hang of them. Most of these also apply to Emacs
+you get the hang of them. Most of these also apply to Emacs and
+editing text within Chrome.
 
 ```
 Control + a -- place cursor at beginning of line
