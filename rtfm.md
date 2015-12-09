@@ -354,11 +354,17 @@ select load_file("/etc/passwd");
 
 # bash/zsh keystrokes
 
-bash and zsh are different, but these keystrokes work for both:
+bash and zsh are different, but these keystrokes work for both. They
+are useful to know in case you are on a jacked up terminal, your
+keyboard is missing certain keys, and they are just plain faster once
+you get the hang of them. Most of these also apply to Emacs
 
 ```
 Control + a -- place cursor at beginning of line
 Control + e -- place cursor at end of line
+
+Control + h -- delete character before cursor (backspace)
+Control + d -- delete character after cursor (delete)
 
 Arrow keys and these do the same thing:
 Control + f -- move cursor forward
