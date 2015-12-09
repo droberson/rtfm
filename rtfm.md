@@ -351,3 +351,27 @@ select user,host,password from mysql.user;
 ```
 select load_file("/etc/passwd");
 ```
+
+# bash/zsh keystrokes
+
+bash and zsh are different, but these keystrokes work for both:
+
+```
+Control + a -- place cursor at beginning of line
+Control + e -- place cursor at end of line
+
+Arrow keys and these do the same thing:
+Control + f -- move cursor forward
+Control + b -- move cursor backwards
+Control + p -- move cursor up (previous command)
+Control + n -- move cursor down (next command)
+
+Control + r -- reverse search history
+Control + g -- exit search
+
+Control + k -- cut line after cursor into clipboard
+Control + u -- cut line before cursor into clipboard
+Control + y -- 'yank' (paste) clipboard contents
+
+Control + l -- clear the screen
+```
