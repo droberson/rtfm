@@ -231,6 +231,11 @@ find / -mtime -7 -exec ls -l {} \; 2>/dev/null
 curl -I http://www.google.com
 ```
 
+- Get HTTP headers from a site that is using SSL:
+```
+curl -kI https://www.google.com
+```
+
 - Display info about your public IP:
 ```
 curl ipinfo.io
