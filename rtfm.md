@@ -15,6 +15,11 @@
 ## KDE
 - Use 'ksnapshot' utility
 
+## Using imagemagick
+```
+import -window root -display :0 whatever.png
+```
+
 # OS X Power Saving
 - Temporarily turn off sleep
 ```
