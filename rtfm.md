@@ -145,15 +145,15 @@ grep -v "^;" <file>
 
 - Shorthand character sets:
 ```
-- [:alnum:] -- Letters and numbers
-- [:alpha:] -- Letters
-- [:digit:] -- Numbers
-- [:punt:]  -- Punctuation characters
-- [:blank:] -- Space and tab
-- [:cntrl:] -- Control characters (000 - 037 and 177 octal)
-- [:lower:] -- Lowercase letters
-- [:upper:] -- Uppercase letters
-- [:space:] -- Whitespace characters )tab, newline, vertical tab, carriage return, ...
+- [:alnum:]  -- Letters and numbers
+- [:alpha:]  -- Letters
+- [:digit:]  -- Numbers
+- [:punt:]   -- Punctuation characters
+- [:blank:]  -- Space and tab
+- [:cntrl:]  -- Control characters (000 - 037 and 177 octal)
+- [:lower:]  -- Lowercase letters
+- [:upper:]  -- Uppercase letters
+- [:space:]  -- Whitespace characters )tab, newline, vertical tab, carriage return, ...
 - [:xdigit:] -- Hexadecimal digits: 0-9, a-f, A-F
 ```
 
