@@ -31,6 +31,12 @@ sudo pmset sleep 0
 sudo pmset sleep 15
 ```
 
+# ASCII/Hexadecimal/decimal/octal reference on Linux/BSD systems
+- One of the handiest manpages:
+```
+man 7 ascii
+```
+
 # Netcat
 - Reverse shell
 ```
