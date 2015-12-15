@@ -20,6 +20,12 @@
 import -window root -display :0 whatever.png
 ```
 
+## Firefox
+```
+Shift + F2
+at the >> prompt: screenshot --fullpage <filename>
+```
+
 # OS X Power Saving
 - Temporarily turn off sleep
 ```
