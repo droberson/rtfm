@@ -424,3 +424,8 @@ Control + y -- 'yank' (paste) clipboard contents
 
 Control + l -- clear the screen
 ```
+
+# convert ASCII strings of hex back into binary
+```
+xxd -r -p file.hex > file.bin
+```
