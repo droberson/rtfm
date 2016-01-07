@@ -26,6 +26,11 @@ Shift + F2
 at the >> prompt: screenshot --fullpage <filename>
 ```
 
+## Linux in general
+
+- Use shutter. Its one of the best screenshot tools I've found. Has
+editing and upload capabilities.
+
 # OS X Power Saving
 - Temporarily turn off sleep
 ```
