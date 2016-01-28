@@ -433,3 +433,10 @@ Control + l -- clear the screen
 ```
 xxd -r -p file.hex > file.bin
 ```
+
+# Wardriving
+
+## Make your laptop speak ESSIDs while roaming around (stolen from @climagic on Twitter)
+```
+while :;do iwlist wlan0 scan |awk -F\" '/ESSID/{print $2}' |espeak;done
+```
