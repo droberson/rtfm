@@ -7,3 +7,7 @@ telnet: admin:admin
 ## Vicidial Asterisk Manager
 
 cron:1234
+
+## Supermicro IPMI
+http: ADMIN/ADMIN
+ssh: ADMIN/ADMIN
