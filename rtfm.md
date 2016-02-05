@@ -440,3 +440,18 @@ xxd -r -p file.hex > file.bin
 ```
 while :;do iwlist wlan0 scan |awk -F\" '/ESSID/{print $2}' |espeak;done
 ```
+
+# iptables
+
+## Calculate amount of bandwidth something used
+```
+iptables -I INPUT 1 -s host -j ACCEPT
+iptables -I OUTPUT 1 -d host -j ACCEPT
+iptables -Z
+...
+...
+Do whatever you wanted to measure bandwidth for
+...
+...
+iptables -vn -L; # this displays a printout showing how much data was transferred.
+```
