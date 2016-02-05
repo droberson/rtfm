@@ -14,3 +14,6 @@ ssh: ADMIN/ADMIN
 
 ## TP-LINK TL-SG2424P Switch
 http: admin/admin
+
+## Sargraph
+http: admin/admin123
