@@ -1,4 +1,4 @@
-# Default credentials for various devices and software
+'# Default credentials for various devices and software
 
 ## Grandstream phones and SIP gateways
 - http/https: admin:admin
@@ -16,3 +16,6 @@
 
 ## Sargraph
 - http: admin/admin123
+
+## Gitlab
+- http: root:5iveL!fe
