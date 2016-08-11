@@ -172,6 +172,10 @@ grep -v "^;" <file>
 - [:xdigit:] -- Hexadecimal digits: 0-9, a-f, A-F
 ```
 
+- Pull IP addresses from a file
+```
+grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' <file>
+```
 
 # tac (backwards cat)
 
