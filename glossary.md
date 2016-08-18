@@ -17,6 +17,11 @@
 
 ## G
 
+- **Grey Box Testing** - An engagement conducted with basic
+    information initially provided by the client. Examples of
+    information: operating system, hardware vendors/models, IP address
+    ranges, ...
+
 ## H
 
 ## I
