@@ -9,3 +9,5 @@ Included in this repository are the following categorized files:
 - defaults.md -- default credentials for various devices and software
 - osint.md -- useful sites and resources for gathering information
 - bookmarks.md -- useful references and other miscellaneous bookmarks
+- acronyms.md -- various security related acronyms
+- ctf.md -- Capture the Flag resources
