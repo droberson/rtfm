@@ -4,12 +4,20 @@
 
 ## B
 
+- **Black Box Testing** - An engagement conducted with very little
+    provided information; typically only the name of the target.
+
 ## C
 
 - **Clear Box Testing** - See *White Box Testing*.
 - **Crystal Box Testing** - See *White Box Testing*.
 
 ## D
+
+- **Double Blind Testing** - An engagement in which the attack is kept
+    secret from most employees. TYpically used for assessing an
+    organization's security posture including monitoring systems,
+    IDS/IPS functionality, and incident response procedures.
 
 ## E
 
