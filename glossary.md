@@ -6,6 +6,9 @@
 
 ## C
 
+- **Clear Box Testing** - See *White Box Testing*.
+- **Crystal Box Testing** - See *White Box Testing*.
+
 ## D
 
 ## E
@@ -45,6 +48,9 @@
 ## V
 
 ## W
+
+- **White Box Testing** - An engagement conducted from the point of
+    view of an insider or well-informed attacker.
 
 ## X
 
