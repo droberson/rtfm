@@ -55,7 +55,9 @@
 
 ## S
 
-- **SOW** - Statement of Work
+- **SOC** - Security Operations Center
+- **SOW** - Statement of Work. Typically applies to the scope of a
+    penetration test engagement.
 
 ## T
 
