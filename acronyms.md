@@ -31,7 +31,12 @@
 
 ## N
 
+- **NIST** - National Institute of Standards and Technology
+
 ## O
+
+- **OSSTMM** - Open Source Security Testing Methodology Manual
+- **OWASP** - Open Web Application Security Project
 
 ## P
 
@@ -47,6 +52,7 @@
 
 ## V
 
+- **VA** - Vulnerability Assessment
 - **VMS** - Vulnerability Management Solution (Nessus, OpenVAS, Qualys, ...)
 
 ## W
