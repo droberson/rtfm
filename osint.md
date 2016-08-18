@@ -1,6 +1,11 @@
 # Open Source Intelligence Resources
 
-## Google
+## [Google](https://www.google.com/)
+
+Google is a fantastic resource for OSINT. Often things as simple as
+searching for your target yields spectacular results. This is often my
+starting point in intelligence gathering. Remember to use Cached
+results whenever possible to conceal your identity. 
 
 ### Double Quotes
 
@@ -17,10 +22,19 @@ Searching for a term on a specific site or domain:
 
 - site:localnewssite.com "Firstname Lastname"
 
+## Other Search Engines
+
 ## Shodan
 
 ## Whois
 
 ## Social Media
+
+### Facebook
+### Twitter
+### Orkut
+### LinkedIn
+
+## Phone books
 
 ## The Harvester
