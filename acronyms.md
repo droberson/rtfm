@@ -2,6 +2,8 @@
 
 ## A
 
+- **ARIN** - American Registry of Internet Numbers
+
 ## B
 
 ## C
@@ -15,6 +17,8 @@
 ## F
 
 ## G
+
+- **GHDB** - [Google Hacking Database](https://www.exploit-db.com/google-hacking-database/)
 
 ## H
 
