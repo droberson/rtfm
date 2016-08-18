@@ -10,4 +10,5 @@ Included in this repository are the following categorized files:
 - osint.md -- useful sites and resources for gathering information
 - bookmarks.md -- useful references and other miscellaneous bookmarks
 - acronyms.md -- various security related acronyms
+- glossary.md -- various security related terminology
 - ctf.md -- Capture the Flag resources
