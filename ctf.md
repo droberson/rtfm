@@ -31,6 +31,7 @@ the resources I've found helpful.
 
 ## Forensics
 
+- file
 - binwalk
 - foremost
 - strings
