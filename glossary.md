@@ -7,6 +7,9 @@
 - **Black Box Testing** - An engagement conducted with very little
     provided information; typically only the name of the target.
 
+- **Blue Team** - Defensive security personnel. SOC workers, analysts,
+    ...
+
 ## C
 
 - **Clear Box Testing** - See *White Box Testing*.
@@ -51,6 +54,8 @@
 ## Q
 
 ## R
+
+- **Red Team* - Offensive security personnel. Penetration testers.
 
 ## S
 
