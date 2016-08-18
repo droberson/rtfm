@@ -16,3 +16,11 @@ quotation marks helps pinpoint your search results:
 Searching for a term on a specific site or domain:
 
 - site:localnewssite.com "Firstname Lastname"
+
+## Shodan
+
+## Whois
+
+## Social Media
+
+## The Harvester
