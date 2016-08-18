@@ -19,3 +19,6 @@
 
 ## Gitlab
 - http: root:5iveL!fe
+
+## APC PDUs (and other APC devices)
+- http: apc:apc
