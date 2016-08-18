@@ -1,4 +1,4 @@
-'# Default credentials for various devices and software
+# Default credentials for various devices and software
 
 ## Grandstream phones and SIP gateways
 - http/https: admin:admin
