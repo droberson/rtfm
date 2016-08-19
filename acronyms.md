@@ -5,12 +5,16 @@
 - **AD** - Active Directory
 - **AES** - Advanced Encryption Standard
 - **ARIN** - American Registry of Internet Numbers
+- **ASCII** - American Standard Code for Information Interchange
 
 ## B
+
+- **BGP** - Border Gateway Protocol
 
 ## C
 
 - **CD** - Compact Disk
+- **CDN** - Content Delivery Network
 - **CLI** - Command Line Interface
 
 ## D
@@ -39,11 +43,16 @@
 
 ## I
 
+- **IEEE* - Institute of Electrical and Electronics Engineers
+- **ICS** - Industrial Control System
 - **IDS** - Intrusion Detection System (Snort, Suricata, ...)
 - **IP** - Internet Protocol
 - **IPS** - Intrusion Prevention|Protection System (Suricata, OSSEC, ...)
+- **ISMI** - International Mobile Subscriber Identity
 
 ## J
+
+- **JSON** - JavaScript Object Notation
 
 ## K
 
@@ -64,6 +73,8 @@
 
 ## O
 
+- **OO** - Object-Oriented
+- **OOP** - Object-Oriented Programming
 - **OS** - Operating System
 - **OSINT** - Open Source Intelligence
 - **OSSTMM** - Open Source Security Testing Methodology Manual
@@ -83,9 +94,12 @@
 ## R
 
 - **RFP** - Request for Proposal
+- **ROP** - Return-Oriented Programming
 
 ## S
 
+- **SCADA** - Supervisory Control and Data Acquisition
+- **SDLC** - System Development Life Cycle
 - **SID** - Security Identifier
 - **SIGINT** - Signals Intelligence
 - **SMB** - Server Message Block
@@ -98,6 +112,7 @@
 ## T
 
 - **TCP** - Transmission Control Protocol
+- **TLS** - Transport Layer Security
 
 ## U
 
@@ -116,6 +131,8 @@
 - **WPAD** - Web Proxy Auto Discovery
 
 ## X
+
+- **XSS** - Cross-site Scripting
 
 ## Y
 
