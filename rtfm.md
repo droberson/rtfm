@@ -463,6 +463,11 @@ Control + l -- clear the screen
 xxd -r -p file.hex > file.bin
 ```
 
+# rot13 using tr
+```
+echo <rot13string> |tr a-zA-Z n-za-mN-ZA-M
+```
+
 # Wardriving
 
 ## Make your laptop speak ESSIDs while roaming around (stolen from @climagic on Twitter)
