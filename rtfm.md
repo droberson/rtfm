@@ -415,6 +415,11 @@ select user,host,password from mysql.user;
 select load_file("/etc/passwd");
 ```
 
+- Show crashed tables:
+```
+show table status where comment like "%crashed%";
+```
+
 # mongodb
 
 - example of testing for injections
