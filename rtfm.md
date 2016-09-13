@@ -1,3 +1,9 @@
+# Kali Linux reverse direction of scroll wheel
+```
+gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
+```
+
 # Screenshots
 ## OS X
 - Command-Shift-3: Full screen to desktop
