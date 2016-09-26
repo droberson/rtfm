@@ -22,3 +22,7 @@
 
 ## APC PDUs (and other APC devices)
 - http: apc:apc
+
+## Shackbox Linux
+- user account: herve:123456789
+- user account: root:123456789
