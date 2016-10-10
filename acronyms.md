@@ -20,6 +20,7 @@
 ## D
 
 - **DBIR** - Data Breach Investigation Report
+- **DMA** - Direct Memory Access
 - **DNS** - Domain Name System
 
 ## E
@@ -39,15 +40,19 @@
 
 ## H
 
+- **HAL** - Hardware Abstraction Layer
 - **HTTP** - Hypertext Transfer Protocol
 
 ## I
 
 - **IEEE* - Institute of Electrical and Electronics Engineers
 - **ICS** - Industrial Control System
+- **IDE (hardware)** - Integrated Device Electronics
+- **IDE (software)** - Interactive Development Environment
 - **IDS** - Intrusion Detection System (Snort, Suricata, ...)
 - **IP** - Internet Protocol
 - **IPS** - Intrusion Prevention|Protection System (Suricata, OSSEC, ...)
+- **IRQ** - Interrupt Request
 - **ISMI** - International Mobile Subscriber Identity
 
 ## J
@@ -62,6 +67,8 @@
 - **LLMNR** - Local Link Multicast Name Request
 
 ## M
+
+- **MBR** - Master Boot Record (first sector of a disk)
 
 ## N
 
@@ -82,10 +89,14 @@
 
 ## P
 
+- **PCI** - Peripheral Component Interconnect
+- **PCI (compliance)** - Payment Card Industry (MasterCard data security standard)
 - **PGP** - Pretty Good Privacy
 - **PoC** - Proof of Concept
+- **POST** - Power-On Self Test
 - **PRNG** - Pseudorandom Number Generator
 - **PtH** - Pass the Hash
+- **PXE** - Preboot Execution Environment
 
 ## Q
 
@@ -117,6 +128,7 @@
 ## U
 
 - **UDP** - User Datagram Protocol
+- **UEFI** - Unified Extensible Firmware Interface
 - **USB** - Universal Serial Bus
 
 ## V
