@@ -4,6 +4,7 @@
 
 - **AD** - Active Directory
 - **AES** - Advanced Encryption Standard
+- **AFP** - Apple Filing Protocol
 - **ARIN** - American Registry of Internet Numbers
 - **ASCII** - American Standard Code for Information Interchange
 
@@ -15,6 +16,7 @@
 
 - **CD** - Compact Disk
 - **CDN** - Content Delivery Network
+- **CIFS** - Common Internet File System
 - **CLI** - Command Line Interface
 
 ## D
@@ -29,6 +31,7 @@
 
 ## F
 
+- **FC** - Fiber Channel
 - **FDE** - Full Disk Encryption
 - **FTP** - File Transfer Protocol
 
@@ -72,8 +75,10 @@
 
 ## N
 
-- **NetBIOS** - Network Basic Input Output System
+- **NAS** - Network Attached Storage
 - **NB-NS** - NetBIOS Name Service
+- **NetBIOS** - Network Basic Input Output System
+- **NFS** - Network File System
 - **NIST** - National Institute of Standards and Technology
 - **NOP** - No Operation
 - **NTLM** - New Technology LAN Manager
@@ -95,6 +100,7 @@
 - **PoC** - Proof of Concept
 - **POST** - Power-On Self Test
 - **PRNG** - Pseudorandom Number Generator
+- **PSTN** - Public Switched Telephone Network
 - **PtH** - Pass the Hash
 - **PXE** - Preboot Execution Environment
 
@@ -109,6 +115,7 @@
 
 ## S
 
+- **SAN** - Storage Area Network
 - **SCADA** - Supervisory Control and Data Acquisition
 - **SDLC** - System Development Life Cycle
 - **SID** - Security Identifier
