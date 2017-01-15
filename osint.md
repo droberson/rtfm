@@ -23,15 +23,19 @@ Searching for a term on a specific site or domain:
 - site:localnewssite.com "Firstname Lastname"
 
 ## Other Search Engines
+### [Dogpile](https://www.dogpile.com/)
+### [DuckDuckGo](https://duckduckgo.com/)
 
-## Shodan
+## [Shodan](https://www.shodan.io/)
 
 ## Whois
+### [ICANN](https://whois.icann.org/en)
+### [Whois.net](https://www.whois.net/)
+### [Whois.com](https://www.whois.com/whois/)
 
 ## Social Media
-
-### Facebook
-### Twitter
+### [Facebook](https://www.facebook.com/)
+### [Twitter](https://www.twitter.com/)
 ### Orkut
 ### LinkedIn
 
