@@ -26,3 +26,6 @@
 ## Shackbox Linux
 - user account: herve:123456789
 - user account: root:123456789
+
+# Graylog Appliance (OVA)
+- user account: ubuntu:ubuntu
