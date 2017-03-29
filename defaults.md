@@ -27,5 +27,9 @@
 - user account: herve:123456789
 - user account: root:123456789
 
-# Graylog Appliance (OVA)
+## OPNSense
+- user account: root:opnsense
+
+## Graylog Appliance (OVA)
 - user account: ubuntu:ubuntu
+
