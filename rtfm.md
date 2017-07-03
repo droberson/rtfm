@@ -441,6 +441,14 @@ Control+a, ] will paste
 select user,host,password from mysql.user;
 ```
 
+- Show databases, tables, and other basics:
+```
+show databases;
+use database;
+show tables;
+describe table;
+```
+
 - Read files from local filesystem:
 ```
 select load_file("/etc/passwd");
