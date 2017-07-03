@@ -281,8 +281,9 @@ find / -type d -perm -o=w -exec ls -l {} \; 2>/dev/null
 ```
 
 - Find files with "passwd" in their names. This throws up a lot of
-  false positives in most cases, but sometimes you can find a readable
+  false positives in most cases, but sometimes you can find readable
   hashes to crack:
+  
 ```
 find / -name "*passwd*" -type f -exec ls -l {} \; 2>/dev/null
 ```
