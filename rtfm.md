@@ -509,6 +509,38 @@ while :;do iwlist wlan0 scan |awk -F\" '/ESSID/{print $2}' |espeak;done
 
 # iptables
 
+## Basic Blocking
+
+### All traffic from a host
+```
+iptables -A INPUT -s ip.address.here -j DROP
+```
+
+### Specific port
+```
+iptables -A INPUT -s ip.address.here -p tcp --destination-port 80 -j DROP
+```
+
+## Unblocking
+```
+iptables -D INPUT -s ip.address.here -j DROP
+```
+
+## Rate Limiting
+
+This example locks IP addresses out if they exceed 4 connections to
+port 22 (SSH) in 60 seconds. This can be modified/tuned for other
+services such as HTTP to throw a wrench in tools such as Nikto or
+Dirbuster.
+
+```
+iptables -N LOGDROP
+iptables -A LOGDROP -j LOG
+iptables -A LOGDROP -j DROP
+iptables -I INPUT -p tcp --dport 22 -i eth0 -m state --state NEW -m recent --set
+iptables -I INPUT -p tcp --dport 22 -i eth0 -m state --state NEW -m recent  --update --seconds 60 --hitcount 4 -j LOGDROP
+```
+
 ## Calculate amount of bandwidth something used
 ```
 iptables -I INPUT 1 -s host -j ACCEPT
