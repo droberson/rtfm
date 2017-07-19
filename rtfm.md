@@ -459,6 +459,12 @@ select load_file("/etc/passwd");
 show table status where comment like "%crashed%";
 ```
 
+- Change a user's password:
+```
+update mysql.user set password=PASSWORD('password') where user='user';
+flush privileges;
+```
+
 # mongodb
 
 - example of testing for injections
