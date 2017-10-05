@@ -6,10 +6,11 @@
 
 This drove me nuts. Hitting ^D to exit, ^L to clear screen, etc did not work. Luckily, Powershell has a profile file similar to bash/zsh:
 ```
-notepad $Profile
+PS > notepad $Profile
 ...
 Set-PSReadlineOption -EditMode Emacs
 ...
+PS > .$Profile ### or close/re-open Powershell
 ```
 
 ## Check NTP server
