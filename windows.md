@@ -10,6 +10,14 @@ This drove me nuts. Hitting ^D to exit, ^L to clear screen, etc did not work. Lu
 .$Profile
 ```
 
+### Disable bell
+
+The bell is also annoying. Disable it:
+```
+"Set-PSReadlineOption -BellStyle None" | Add-Content $Profile
+.$Profile
+```
+
 ## Check NTP server
 
 ```
