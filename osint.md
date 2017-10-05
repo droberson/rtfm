@@ -22,6 +22,12 @@ Searching for a term on a specific site or domain:
 
 - site:localnewssite.com "Firstname Lastname"
 
+### Filetype operator
+
+Search for specific file types:
+
+- filetype:pdf "default password"
+
 ## Other Search Engines
 ### [Dogpile](https://www.dogpile.com/)
 ### [DuckDuckGo](https://duckduckgo.com/)
