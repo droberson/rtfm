@@ -578,3 +578,15 @@ iptables -vn -L; # this displays a printout showing how much data was transferre
 ```
 dd if=/dev/whatever bs=65535 conv=noerror,sync | ssh -C user@host "cat >image.dd"
 ```
+
+## Using Python's built in HTTP servers
+
+### Python2
+```
+python -m SimpleHTTPServer [<port>]
+```
+
+### Python3
+```
+python3 -m http.server [<port>]
+```
