@@ -18,6 +18,11 @@ The bell is also annoying. Disable it:
 .$Profile
 ```
 
+### Get Powershell version
+```
+$PSVersionTable.PSVersion
+```
+
 ## Check NTP server
 
 ```
