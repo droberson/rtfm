@@ -11,3 +11,9 @@ apt install open-vm-tools-desktop
 ## Install some of the tools I use:
 apt install emacs shutter sshuttle
 ```
+
+## Reverse direction of scroll wheel
+```
+gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
+```
