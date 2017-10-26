@@ -28,3 +28,25 @@ $PSVersionTable.PSVersion
 ```
 w32tm /query /peers
 ```
+
+## nbtstat stuff
+
+- Resolve IP address to NetBIOS name:
+```
+nbtstat -A 10.10.10.10
+```
+
+- Show local name table:
+```
+nbtstat -n
+```
+
+- Show local name cache:
+```
+nbtstat -c
+```
+
+- Show NetBIOS statistics:
+```
+nbtstat -S
+```
