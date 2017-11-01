@@ -46,6 +46,20 @@ sudo pmset sleep 0
 sudo pmset sleep 15
 ```
 
+# Sorting lists of IP addresses
+- Using GNU sort (possibly others), there is a -V flag that sorts by software
+  version numbers. This works great for IP addresses so you don't get lists like this:
+```
+1.1.1.1
+1.1.1.10
+1.1.1.2
+...
+```
+
+```
+sort -V filename
+```
+
 # ASCII/Hexadecimal/decimal/octal reference on Linux/BSD systems
 - One of the handiest manpages:
 ```
