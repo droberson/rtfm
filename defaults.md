@@ -1,5 +1,12 @@
 # Default credentials for various devices and software
 
+Product/Software | Service | Username | Password
+---------------- | ------- | -------- | --------
+Grandstream phones/SIP gateways | http | admin | admin
+Grandstream phones/SIP gateways | https | admin | admin
+Grandstream phones/SIP gateways | telnet | admin | admin
+
+
 ## Grandstream phones and SIP gateways
 - http/https: admin:admin
 - telnet: admin:admin
