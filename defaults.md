@@ -3,6 +3,7 @@
 Product/Software | Service | Username | Password
 ---------------- | ------- | -------- | --------
 APC (multiple)  | http | apc | apc
+Fargo DTC4250e | http | root | NO PASSWORD
 Gitlab | http | root | 5iveL!fe
 Grandstream phones/SIP gateways | http | admin | admin
 Grandstream phones/SIP gateways | https | admin | admin
