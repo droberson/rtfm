@@ -8,14 +8,14 @@
 - cron:1234
 
 ## Supermicro IPMI
-- http: ADMIN/ADMIN
-- ssh: ADMIN/ADMIN
+- http: ADMIN:ADMIN
+- ssh: ADMIN:ADMIN
 
 ## TP-LINK TL-SG2424P Switch
-- http: admin/admin
+- http: admin:admin
 
 ## Sargraph
-- http: admin/admin123
+- http: admin:admin123
 
 ## Gitlab
 - http: root:5iveL!fe
@@ -33,3 +33,5 @@
 ## Graylog Appliance (OVA)
 - user account: ubuntu:ubuntu
 
+## Xerox WorkCentre
+- http: admin:1111
