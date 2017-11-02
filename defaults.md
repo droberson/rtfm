@@ -2,43 +2,20 @@
 
 Product/Software | Service | Username | Password
 ---------------- | ------- | -------- | --------
+APC (multiple)  | http | apc | apc
+Gitlab | http | root | 5iveL!fe
 Grandstream phones/SIP gateways | http | admin | admin
 Grandstream phones/SIP gateways | https | admin | admin
 Grandstream phones/SIP gateways | telnet | admin | admin
-
-
-## Grandstream phones and SIP gateways
-- http/https: admin:admin
-- telnet: admin:admin
-
-## Vicidial Asterisk Manager
-- cron:1234
-
-## Supermicro IPMI
-- http: ADMIN:ADMIN
-- ssh: ADMIN:ADMIN
-
-## TP-LINK TL-SG2424P Switch
-- http: admin:admin
-
-## Sargraph
-- http: admin:admin123
-
-## Gitlab
-- http: root:5iveL!fe
-
-## APC PDUs (and other APC devices)
-- http: apc:apc
-
-## Shackbox Linux
-- user account: herve:123456789
-- user account: root:123456789
-
-## OPNSense
-- user account: root:opnsense
-
-## Graylog Appliance (OVA)
-- user account: ubuntu:ubuntu
-
-## Xerox WorkCentre
-- http: admin:1111
+Graylog Appliance (OVA) | user account | ubuntu | ubuntu
+OPNSense | user account | root | opnsense
+PFSense | http | admin | pfsense
+Sargraph | http | admin | admin123
+Shackbox Linux | user account | herve | 123456789
+Shackbox Linux | user account | root | 123456789
+Supermicro | IPMI | ADMIN | ADMIN
+TP-LINK (multiple) | http | admin | admin
+Vicidial | Asterisk Manager | cron | 1234
+Vicidial | http | 6666 | 1234
+Vicidial | mysql | root | NO PASSWORD
+Xerox WorkCentre | http | admin | 1111
