@@ -54,7 +54,7 @@ the resources I've found helpful.
 
 - DNS tools: dig, host, etc.
 - Whois
-- The Wayback Machine
+- [The Wayback Machine](https://archive.org/)
 - wget/curl one liners
 - nmap
 
@@ -62,7 +62,7 @@ the resources I've found helpful.
 ## Web
 
 - Browser developer consoles
-- Burp
+- Burp Suite
 - Nikto
 - Dirbuster
 - [JWT Decoder](https://jwt.io/)
