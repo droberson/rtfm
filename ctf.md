@@ -71,7 +71,7 @@ the resources I've found helpful.
 
 ## Binary Exploitation
 
-- Books
+- [pwntools](https://docs.pwntools.com/en/stable/)
 - pattern create Metasploit modules
 
 
