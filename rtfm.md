@@ -60,6 +60,31 @@ sudo pmset sleep 15
 sort -V filename
 ```
 
+# http_proxy Environment Variable
+Sometimes, you will be in an environment that requires a proxy. Many tools 
+such as curl or wget will use the http_proxy variable:
+
+```
+$ export http_proxy="http://user:pass@proxy.whatever.com:8080/"
+```
+
+If your password contains special characters, they must be escaped:
+```
+$ printf "%%%02x\n" \"\!
+%21
+$ export http_proxy="http://user:password%21@proxy.corp:8080/"
+```
+
+Some common characters:
+
+Character | Value
+--------- | -----
+!         | %21
+@         | %40
+          | %23
+$         | %24
+
+
 # ASCII/Hexadecimal/decimal/octal reference on Linux/BSD systems
 - One of the handiest manpages:
 ```
