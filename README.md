@@ -16,4 +16,5 @@ Included in this repository are the following categorized files:
 - [glossary.md](glossary.md) -- various security related terminology
 - [ctf.md](ctf.md) -- Capture the Flag resources
 - [metasploit.md](metasploit.md) -- notes about Metasploit
+- [windows.md](windows.md) -- All things Windows.
 
