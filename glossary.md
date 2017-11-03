@@ -55,7 +55,7 @@
 
 ## R
 
-- **Red Team* - Offensive security personnel. Penetration testers.
+- **Red Team** - Offensive security personnel. Penetration testers.
 
 ## S
 
