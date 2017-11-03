@@ -375,29 +375,6 @@ for i in {1..65535}; do curl -s -m 2 localhost:$i >/dev/null; if [ ! $? -eq 7 ] 
 For a more robust script that uses curl to portscan hosts, peep this:
 https://github.com/droberson/curl-portscan
 
-# Command Line Equivalents from Linux to Windows
-
-| Purpose      		    | Linux	  | Windows               |
-| ------------------------- | ----------- | --------------------- |
-| Directory list    	    | ls	  | dir                   |
-| Display file's contents   | cat         | type                  |
-| Display file with a pager | less file   | type file &#124; more |
-| Copy file    	      	    | cp 	  | copy                  |
-| Delete file		    | rm	  | del	                  |
-| Rename file		    | mv	  | ren	                  |
-| Show network interfaces   | ifconfig -a | ipconfig /all         |
-| Show running processes    | ps          | tasklist              |
-| Search for strings        | grep        | findstr &#124; find   |
-| Terminate a process       | kill        | taskkill              |
-| Change file attributes    | chmod       | attrib                |
-| Clear screen              | clear       | cls                   |
-| Compare files             | diff        | fc                    |
-| Show disk usage           | df          | freedisk              |
-| Show memory usage         | free        | mem                   |
-
-Further reading on Windows command line nonsense:
-- http://ss64.com/nt/
-
 # Copy and paste using GNU screen
 
 Sometimes you may need to copy and paste terminal output, but you
