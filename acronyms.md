@@ -48,7 +48,7 @@
 
 ## I
 
-- **IEEE* - Institute of Electrical and Electronics Engineers
+- **IEEE** - Institute of Electrical and Electronics Engineers
 - **ICS** - Industrial Control System
 - **IDE (hardware)** - Integrated Device Electronics
 - **IDE (software)** - Interactive Development Environment
