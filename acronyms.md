@@ -2,6 +2,7 @@
 
 ## A
 
+- **ACL** - Access Control List
 - **AD** - Active Directory
 - **AES** - Advanced Encryption Standard
 - **AFP** - Apple Filing Protocol
