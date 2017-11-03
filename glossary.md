@@ -59,6 +59,7 @@
 
 ## S
 
+- **SIEM** - Security Information and Event Management.
 
 ## T
 
