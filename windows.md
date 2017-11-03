@@ -21,6 +21,7 @@
 | Compare files             | diff        | fc                    |
 | Show disk usage           | df          | freedisk              |
 | Show memory usage         | free        | mem                   |
+| System information        | uname -a    | systeminfo            |
 
 Further reading on Windows command line nonsense:
 - http://ss64.com/nt/
