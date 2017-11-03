@@ -1,5 +1,30 @@
 # Various Windows stuff..
 
+
+
+## Command Line Equivalents from Linux to Windows
+
+| Purpose      		          | Linux	      | Windows               |
+| ------------------------- | ----------- | --------------------- |
+| Directory list    	      | ls          | dir                   |
+| Display file's contents   | cat         | type                  |
+| Display file with a pager | less file   | type file &#124; more |
+| Copy file    	      	    | cp 	        | copy                  |
+| Delete file	              | rm          | del	                  |
+| Rename file	              | mv          | ren	                  |
+| Show network interfaces   | ifconfig -a | ipconfig /all         |
+| Show running processes    | ps          | tasklist              |
+| Search for strings        | grep        | findstr &#124; find   |
+| Terminate a process       | kill        | taskkill              |
+| Change file attributes    | chmod       | attrib                |
+| Clear screen              | clear       | cls                   |
+| Compare files             | diff        | fc                    |
+| Show disk usage           | df          | freedisk              |
+| Show memory usage         | free        | mem                   |
+
+Further reading on Windows command line nonsense:
+- http://ss64.com/nt/
+
 ## Windows Platform Tokens
 
 These strings are found in user agent strings in browsers amongst
