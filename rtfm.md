@@ -84,6 +84,14 @@ Character | Value
 \#        | %23
 $         | %24
 
+# Using nmap over Tor
+- Install proxychains, tor, and nmap
+- Make sure /etc/proxychains.conf is right
+- Make sure /etc/tor/torrc is right
+- Finally:
+```
+proxychains nmap -F host_here
+```
 
 # ASCII/Hexadecimal/decimal/octal reference on Linux/BSD systems
 - One of the handiest manpages:
