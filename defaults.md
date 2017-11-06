@@ -17,6 +17,7 @@ SELKS | user account | root | StamusNetworks |
 Shackbox Linux | user account | herve | 123456789 |
 Shackbox Linux | user account | root | 123456789 |
 Supermicro | IPMI | ADMIN | ADMIN |
+TeraStation NAS | http | admin | password |
 TP-LINK (multiple) | http | admin | admin |
 Vicidial | Asterisk Manager | cron | 1234 |
 Vicidial | http | 6666 | 1234 |
