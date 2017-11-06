@@ -1,7 +1,7 @@
 # Default credentials for various devices and software
 
 Product/Software | Service | Username | Password | Remarks
----------------- | ------- | -------- | -------- | 
+---------------- | ------- | -------- | -------- | -------
 APC (multiple)  | http | apc | apc |
 Fargo DTC4250e | http | root | NO PASSWORD |
 Gitlab | http | root | 5iveL!fe |
