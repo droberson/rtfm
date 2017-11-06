@@ -12,6 +12,9 @@ Graylog Appliance (OVA) | user account | ubuntu | ubuntu
 OPNSense | user account | root | opnsense
 PFSense | http | admin | pfsense
 Sargraph | http | admin | admin123
+SELKS | user account | selks-user | selks-user
+SELKS | user account | selks-user | live
+SELKS | user account | root | StamusNetworks
 Shackbox Linux | user account | herve | 123456789
 Shackbox Linux | user account | root | 123456789
 Supermicro | IPMI | ADMIN | ADMIN
