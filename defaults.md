@@ -8,6 +8,8 @@ Gitlab | http | root | 5iveL!fe |
 Grandstream phones/SIP gateways | http(s) | admin | admin |
 Grandstream phones/SIP gateways | telnet | admin | admin | 
 Graylog Appliance (OVA) | user account | ubuntu | ubuntu |
+HID Fargo printers (multiple) | telnet | root | NO PASSWORD |
+HID Fargo printers (multiple) | telnet | guest | NO PASSWORD |
 OPNSense | user account | root | opnsense |
 PFSense | http | admin | pfsense |
 Sargraph | http | admin | admin123 |
