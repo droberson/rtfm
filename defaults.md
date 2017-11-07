@@ -24,4 +24,6 @@ TP-LINK (multiple) | http | admin | admin |
 Vicidial | Asterisk Manager | cron | 1234 |
 Vicidial | http | 6666 | 1234 |
 Vicidial | mysql | root | NO PASSWORD |
+Wiegotcha RFID Thief | user account | root | Wiegotcha |
+Wiegotcha RFID Thief | user account | pi | Wiegotcha |
 Xerox WorkCentre | http | admin | 1111 |
