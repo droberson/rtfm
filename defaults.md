@@ -12,6 +12,7 @@ HID Fargo printers (multiple) | telnet | root | NO PASSWORD |
 HID Fargo printers (multiple) | telnet | guest | NO PASSWORD |
 OPNSense | user account | root | opnsense |
 PFSense | http | admin | pfsense |
+Raspbian | user account | pi | raspberry |
 Sargraph | http | admin | admin123 |
 SELKS | user account | selks-user | selks-user |
 SELKS | user account | selks-user | live | In "live mode"
