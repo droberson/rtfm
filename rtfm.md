@@ -588,3 +588,11 @@ python -m SimpleHTTPServer [<port>]
 ```
 python3 -m http.server [<port>]
 ```
+
+# OpenSSL
+
+## Connect to service using SSL
+```
+openssl s_client -connect host:port
+```
+
