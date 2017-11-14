@@ -19,6 +19,7 @@ SELKS | user account | selks-user | live | In "live mode"
 SELKS | user account | root | StamusNetworks |
 Shackbox Linux | user account | herve | 123456789 |
 Shackbox Linux | user account | root | 123456789 |
+Splunk | http | admin | changeme | forces password change after first login
 Supermicro | IPMI | ADMIN | ADMIN |
 TeraStation NAS | http | admin | password |
 TP-LINK (multiple) | http | admin | admin |
