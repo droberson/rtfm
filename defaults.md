@@ -10,6 +10,7 @@ Grandstream phones/SIP gateways | telnet | admin | admin |
 Graylog Appliance (OVA) | user account | ubuntu | ubuntu |
 HID Fargo printers (multiple) | telnet | root | NO PASSWORD |
 HID Fargo printers (multiple) | telnet | guest | NO PASSWORD |
+Honeywell BNA (multiple) | telnet | root | NO PASSWORD |
 Lantronix MSS100 | http | NO USERNAME | system |
 OPNSense | user account | root | opnsense |
 PFSense | http | admin | pfsense |
