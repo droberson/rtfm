@@ -31,3 +31,6 @@ Vicidial | mysql | root | NO PASSWORD |
 Wiegotcha RFID Thief | user account | root | Wiegotcha |
 Wiegotcha RFID Thief | user account | pi | Wiegotcha |
 Xerox WorkCentre | http | admin | 1111 |
+ZyXEL PK5001Z | telnet | admin | CenturyL1nk | CVE-2016-10401
+ZyXEL PK5001Z | telnet | admin | QwestM0dem |
+ZyXEL PK5001Z | user account | root | zyad5001 | CVE-2016-10401
