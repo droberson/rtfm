@@ -11,7 +11,6 @@ msf> db_status
 Save this as search_cve.rc:
 ```
 <ruby>
-
 cvefile="CVEs.txt"
 cves=[]
 
