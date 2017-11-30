@@ -24,6 +24,8 @@ cves.each do |cve|
 	self.print("Searching for #{cve}")
 	self.run_single("search #{cve}")
 end
+
+self.run_single("exit")
 </ruby>
 ```
 Execute the script:
