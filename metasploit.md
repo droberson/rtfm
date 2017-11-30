@@ -11,6 +11,7 @@ msf> db_status
 Save this as search_cve.rc:
 ```
 <ruby>
+self.run_single("sleep 5") # wait for database
 cvefile="CVEs.txt"
 cves=[]
 
