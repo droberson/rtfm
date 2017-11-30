@@ -7,7 +7,7 @@ msf> db_status
 ... should say connected to msf ...
 ```
 
-# Quick example of Metasploit Resource script
+# Quick example of Metasploit Resource Script
 Save this as search_cve.rc:
 ```
 <ruby>
