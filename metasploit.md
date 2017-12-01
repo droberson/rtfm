@@ -22,10 +22,12 @@ File.open(cvefile, "r") do |f|
 end
 
 cves.each do |cve|
-	self.print("Searching for #{cve}")
-	self.run_single("search #{cve}")
+	self.print("Searching for exploits for #{cve}")
+	self.run_single("grep exploit search #{cve}")
+	self.print("\n")
 end
 
+self.print("\n")
 self.run_single("exit")
 </ruby>
 ```
