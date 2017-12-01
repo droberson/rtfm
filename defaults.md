@@ -17,6 +17,8 @@ Honeywell BNA (multiple) | telnet | root | NO PASSWORD |
 Lantronix MSS100 | http | NO USERNAME | system |
 OPNSense | user account | root | opnsense |
 PFSense | http | admin | pfsense |
+Raritan Secure Gateway | http | admin | raritan |
+Raritan Secure Gateway | telnet | admin | raritan |
 Raspbian | user account | pi | raspberry |
 Sargraph | http | admin | admin123 |
 SELKS | user account | selks-user | selks-user |
