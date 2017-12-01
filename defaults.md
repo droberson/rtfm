@@ -3,6 +3,9 @@
 Product/Software | Service | Username | Password | Remarks
 ---------------- | ------- | -------- | -------- | -------
 APC (multiple)  | http | apc | apc |
+ConnectUPS Web/SNMP Card | http | admin | admin |
+ConnectUPS Web/SNMP Card | telnet | admin | admin |
+Emerson Network Power IntelliSlot Web Card | telnet | Liebert | Liebert |
 Fargo DTC4250e | http | root | NO PASSWORD |
 Gitlab | http | root | 5iveL!fe |
 Grandstream phones/SIP gateways | http(s) | admin | admin |
