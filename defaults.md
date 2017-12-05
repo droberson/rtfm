@@ -16,7 +16,14 @@ HID Fargo printers (multiple) | telnet | guest | NO PASSWORD |
 Honeywell BNA (multiple) | telnet | root | NO PASSWORD |
 Lantronix MSS100 | http | NO USERNAME | system |
 OPNSense | user account | root | opnsense |
+Perle 833 Access Servers | ??? | superusr | NO PASSWORD | Haven't verified; pulled from manufacturer's website.
+Perle CS9000 Console Server | ??? | admin | superuser | Haven't verified; pulled from manufacturer's website.
+Perle IOLAN Terminal Server | ??? | ANY DATA! | iolan | Haven't verified; pulled from manufacturer's website.
+Perle IOPRINT+ Print Server | ??? | See sticker attached to device | NO PASSWORD | Haven't verified; pulled from manufacturer's website.
 Perle IOSENSE Terminal Servers | telnet | admin | superuser |
+Perle Linkstream2000 router | ??? | manager | ...... | Haven't verified; pulled from manufacturer's website.
+Perle Jetstream/Lanstream Terminal Servers | ??? | admin | NO PASSWORD | Haven't verified; pulled from manufacturer's website.
+Perle P series routers | ??? | N/A | BRIDGE | Haven't verified; pulled from manufacturer's website.
 PFSense | http | admin | pfsense |
 Raritan Secure Gateway | http | admin | raritan |
 Raritan Secure Gateway | telnet | admin | raritan |
