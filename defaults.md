@@ -16,6 +16,7 @@ HID Fargo printers (multiple) | telnet | guest | NO PASSWORD |
 Honeywell BNA (multiple) | telnet | root | NO PASSWORD |
 Lantronix MSS100 | http | NO USERNAME | system |
 OPNSense | user account | root | opnsense |
+Perle IOSENSE Terminal Servers | telnet | admin | superuser |
 PFSense | http | admin | pfsense |
 Raritan Secure Gateway | http | admin | raritan |
 Raritan Secure Gateway | telnet | admin | raritan |
