@@ -38,6 +38,7 @@ Splunk | http | admin | changeme | forces password change after first login
 Supermicro | IPMI | ADMIN | ADMIN |
 TeraStation NAS | http | admin | password |
 TP-LINK (multiple) | http | admin | admin |
+Transition Networks CPSMM100-120 | telnet | NO USERNAME | private |
 Vicidial | Asterisk Manager | cron | 1234 |
 Vicidial | http | 6666 | 1234 |
 Vicidial | mysql | root | NO PASSWORD |
