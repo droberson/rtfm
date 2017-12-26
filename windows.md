@@ -109,3 +109,9 @@ nbtstat -S
 ```
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
+
+## AD user/group enumeration
+```
+net users /domain
+net groups /domain
+```
