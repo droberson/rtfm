@@ -9,10 +9,16 @@ that can be gleaned isn't immediately apparent.
 - [21 / FTP](#ftp)
 - [22 / SSH](#ssh)
 - [23 / Telnet](#telnet)
+- [1433 / MS-SQL)(#ms-sql)
 
 ## UDP
 
 - [161 / SNMP](#snmp)
+
+## Simple TCP/IP Services
+Windows comes with a feature called "Simple TCP/IP Services" which includes an echo, discard,
+character generator, quote of the day, and daytime service. This is mostly for testing network
+connectivity and serve no real purpose beyond testing from what I can tell.
 
 ## Echo
 - _nc host_here 7_
@@ -67,3 +73,7 @@ Password:
 - Hosts with open public communities can divulge a lot of information: OS, processes running, netstat data, logs, ... 
 - Hosts with open private commmunities can have their configurations changed.
 - UDP can be spoofed, which may be useful while attacking SNMP.
+
+## MS-SQL
+- https://www.npmjs.com/package/sql-cli
+- Sometimes, applications have default database credentials or can be discovered. Poke around.
