@@ -9,6 +9,7 @@ that can be gleaned isn't immediately apparent.
 - [21 / FTP](#ftp)
 - [22 / SSH](#ssh)
 - [23 / Telnet](#telnet)
+- [25 / SMTP](#smtp)
 - [1433 / MS-SQL](#ms-sql)
 
 ## UDP
@@ -63,6 +64,31 @@ User Access Verification
 
 Username: dmfr
 Password:
+```
+
+## SMTP
+- Used for sending email.
+- Banner may reveal details about the underlying OS.
+- May be able to send mail to another internal mail server.
+- May be able to enumerate usernames.
+- Example sending email using netcat:
+```
+ % nc terrible.host 25
+220 terrible.host ESMTP Postfix
+helo blah.com
+250 terrible.host
+mail from:<daniel@localhost>
+250 2.1.0 Ok
+rcpt to:<daniel@terrible.host>
+250 2.1.5 Ok
+data
+354 End data with <CR><LF>.<CR><LF>
+Subject: lol
+asdf
+.
+250 2.0.0 Ok: queued as 6B8F243186
+quit
+221 2.0.0 Bye
 ```
 
 ## SNMP
