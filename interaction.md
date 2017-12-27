@@ -12,6 +12,8 @@ that can be gleaned isn't immediately apparent.
 
 ## UDP
 
+- [161 / SNMP](#snmp)
+
 ## Echo
 - _nc host_here 7_
 - Pretty useless, but present for network troubleshooting purposes on older hosts.
@@ -55,3 +57,13 @@ User Access Verification
 Username: dmfr
 Password:
 ```
+
+## SNMP
+- _snmpget_ and _snmpwalk_ commands
+- _onesixtyone_ scans for hosts responding to a list of communities.
+- Check for public/private default communities.
+- Often community names are default.
+- SNMPv1 can be sniffed, revealing the community names.
+- Hosts with open public communities can divulge a lot of information: OS, processes running, netstat data, logs, ... 
+- Hosts with open private commmunities can have their configurations changed.
+- UDP can be spoofed, which may be useful while attacking SNMP.
