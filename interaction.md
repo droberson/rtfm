@@ -9,7 +9,7 @@ that can be gleaned isn't immediately apparent.
 - [21 / FTP](#ftp)
 - [22 / SSH](#ssh)
 - [23 / Telnet](#telnet)
-- [1433 / MS-SQL)(#ms-sql)
+- [1433 / MS-SQL](#ms-sql)
 
 ## UDP
 
