@@ -9,7 +9,7 @@ that can be gleaned isn't immediately apparent.
 
 ## UDP
 
-(#FTP)
+#FTP
 ## FTP
 - /ftp/ command
 - Check for anonymous/user@
