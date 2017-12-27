@@ -10,7 +10,8 @@ that can be gleaned isn't immediately apparent.
 ## UDP
 
 ## FTP
-- /ftp/ command
-- Check for anonymous/user@
+- _ftp_ command
+- Check for anonymous/user@host.com
+- Might have writable directories.
 - Can often brute force accounts.
-- FTP bounce port scanning /nmap -b ftp_server_here allports.alpha-draconis.com/
+- FTP bounce port scanning _nmap -b ftp_server_here allports.alpha-draconis.com_
