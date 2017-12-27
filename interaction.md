@@ -37,6 +37,7 @@ connectivity and serve no real purpose beyond testing from what I can tell.
 - FTP bounce port scanning _nmap -b ftp_server_here allports.alpha-draconis.com_
 - Plaintext protocol. May be able to sniff passwords.
 - OS/distro can often be determined based on the banner.
+- Filezilla.xml files may contain saved credentials.
 
 ## SSH
 - _ssh_ command.
