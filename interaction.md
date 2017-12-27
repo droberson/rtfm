@@ -77,3 +77,5 @@ Password:
 ## MS-SQL
 - https://www.npmjs.com/package/sql-cli
 - Sometimes, applications have default database credentials or can be discovered. Poke around.
+- If you manage to access the database, try to find login/user tables. 
+- May be able to use xp_cmdshell stored procedure to execute shell commands as the database user.
