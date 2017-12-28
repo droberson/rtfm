@@ -8,6 +8,9 @@ apt autoremove
 ## If running as VMware guest:
 apt install open-vm-tools-desktop
 
+## If running as VirtualBox guest:
+apt install virtualbox-guest-x11
+
 ## Install some of the tools I use:
 apt install emacs shutter sshuttle
 ```
