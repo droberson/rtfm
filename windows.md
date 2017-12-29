@@ -2,6 +2,22 @@
 
 Stuff I've found useful while working with Windows systems.
 
+## Get Windows version
+- GUI window:
+```
+winver
+```
+
+- Within cmd:
+```
+ver
+```
+
+- Using systeminfo (Powershell and cmd):
+```
+systeminfo |findstr OS
+```
+
 ## Command Line Equivalents from Linux to Windows
 
 | Purpose      		          | Linux	      | Windows               |
