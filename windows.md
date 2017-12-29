@@ -100,7 +100,6 @@ w32tm /query /peers
 ```
 
 ## nbtstat stuff
-
 - Resolve IP address to NetBIOS name:
 ```
 nbtstat -A 10.10.10.10
@@ -127,7 +126,14 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 ```
 
 ## AD user/group enumeration
+- Get all users or groups:
 ```
 net users /domain
 net groups /domain
+```
+
+- Get specific user or group:
+```
+net users USERNAME_HERE /domain
+net groups GROUP_HERE /domain
 ```
