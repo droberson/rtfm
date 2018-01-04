@@ -137,3 +137,10 @@ net groups /domain
 net users USERNAME_HERE /domain
 net groups GROUP_HERE /domain
 ```
+
+## Check for Meltdown/Spectre
+As Administrator:
+```
+Install-Module SpeculationControl
+Get-SpeculationControlSettings
+```
