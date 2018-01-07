@@ -70,6 +70,15 @@ Further reading:
 - https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions
 - https://msdn.microsoft.com/en-us/library/ms537503%28v=vs.85%29.aspx
 
+## Reset a Windows 10 machine 
+1. Start your PC and select the Power icon in the bottom right-hand corner of the lock screen.
+2. While holding down the Shift key, select Restart.
+3. On the Boot options menu, select Troubleshoot > Reset this PC > Remove everything.
+4. Your PC will restart and will reset itself.
+
+https://support.microsoft.com/en-us/help/4028457/windows-reset-your-windows-10-local-account-password
+
+
 ## Powershell
 
 ### Make ^D and other Emacs-like keybindings work in Powershell
