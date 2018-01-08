@@ -153,3 +153,11 @@ As Administrator:
 Install-Module SpeculationControl
 Get-SpeculationControlSettings
 ```
+
+## Install chocolately
+Like apt/brew/pkg/yum/..., but for Windows!
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+
+## 
