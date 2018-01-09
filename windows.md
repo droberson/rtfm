@@ -167,7 +167,9 @@ Control-C doesnt kill programs in Linux and I always forget to Control-C to copy
 in Windows. This has been one of the most annoying things about using different
 types of systems.
 
-Luckily, I was able to achieve this functionality in Windows using _AutoHotKey_:
+Luckily, I was able to achieve some of this functionality in Windows using
+_AutoHotKey_, but this is still not perfect because some applications such as
+putty and powershell don't honor Control-C and Control-V:
 ```
 choco install autohotkey
 ```
