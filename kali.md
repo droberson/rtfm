@@ -2,6 +2,7 @@
 Here are some of the things I typically do on a new installation of Kali Linux:
 
 ```
+## Update packages. Do this before you're out in the field because it can take a while.
 apt update && apt upgrade
 apt autoremove
 
