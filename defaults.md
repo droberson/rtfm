@@ -2,6 +2,8 @@
 
 Product/Software | Service | Username | Password | Remarks
 ---------------- | ------- | -------- | -------- | -------
+Apache Tomcat | http | tomcat | tomcat |
+Apache Tomcat | http | manager | manager |
 APC (multiple)  | http | apc | apc |
 ConnectUPS Web/SNMP Card | http | admin | admin |
 ConnectUPS Web/SNMP Card | telnet | admin | admin |
