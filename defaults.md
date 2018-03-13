@@ -18,6 +18,7 @@ HID Fargo printers (multiple) | telnet | root | NO PASSWORD |
 HID Fargo printers (multiple) | telnet | guest | NO PASSWORD |
 Honeywell BNA (multiple) | telnet | root | NO PASSWORD |
 Lantronix MSS100 | http | NO USERNAME | system |
+Motorola FX9500 | ssh | cliuser | NO PASSWORD | reader.login( login=factory, pwd=HERCf95*..)
 OPNSense | user account | root | opnsense |
 Perle 833 Access Servers | ??? | superusr | NO PASSWORD | Haven't verified; pulled from manufacturer's website.
 Perle CS9000 Console Server | ??? | admin | superuser | Haven't verified; pulled from manufacturer's website.
