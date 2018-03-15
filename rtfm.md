@@ -30,6 +30,25 @@ at the >> prompt: screenshot --fullpage <filename>
 - Use [shutter](http://shutter-project.org/). Its one of the best
 screenshot tools I've found. Has editing and upload capabilities.
 
+# Linux Virtual Interfaces
+I had a scenario where I found some NFS exports on a network, but they were restricted
+to a handful of IP addresses which weren't mine. Several of the IP addresses were not
+responding to pings and other probes. It seems they had been decomissioned.
+
+I wanted to mount this NFS share so I could rifle through it's contents.
+
+First, I configured a virtual interface:
+```
+ifconfig eth0:0 192.168.111.111 netmask 255.255.255.0
+```
+
+Next, I needed to route traffic to/from the NFS server through this virtual interface:
+```
+ip route add nfs.servers.ip.here/32 dev eth0:0 src 192.168.111.111
+```
+
+Now, I am able to mount this NFS share and loot it.
+
 # OS X Power Saving
 - Temporarily turn off sleep
 ```
