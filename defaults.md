@@ -10,6 +10,7 @@ ConnectUPS Web/SNMP Card | telnet | admin | admin |
 Emerson Network Power IntelliSlot Web Card | telnet | Liebert | Liebert |
 Enterasys Switches (multiple) | telnet | admin | NO PASSWORD | Prompts to change after first login.
 Fargo DTC4250e | http | root | NO PASSWORD |
+Firebird Database | TCP/3050 | sysdba | masterkey | flamerobin package on Kali to interact with these databases.
 Gitlab | http | root | 5iveL!fe |
 Grandstream phones/SIP gateways | http(s) | admin | admin |
 Grandstream phones/SIP gateways | telnet | admin | admin | 
