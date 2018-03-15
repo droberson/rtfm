@@ -21,3 +21,13 @@ apt install emacs shutter sshuttle
 gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 ```
+
+
+## Fixing EXPKEYSIG error in apt
+```
+gpg --keyserver hkp://keys.gnupg.net --recv-key 7D8D0BF6
+gpg --fingerprint 7D8D0BF6 ### verify output of this command before proceeding
+
+gpg -a --export 7D8D0BF6 | apt-key add -
+apt update
+```
