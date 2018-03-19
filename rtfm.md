@@ -616,3 +616,15 @@ python3 -m http.server [<port>]
 openssl s_client -connect host:port
 ```
 
+# ESXi
+
+## Getting version info
+```
+curl -k https://HOST_HERE/dyndata.js
+```
+
+## Getting version information from multiple hosts
+This assumes a file named "esxi-hosts" with an IP address/hostname on each line:
+```
+for host in $(cat esxi-hosts); do echo -n "$host "; curl -k https://$host/dyndata.js 2>/dev/null |cut -d \" -f 2 |tr "\n" " "; echo; done
+```
