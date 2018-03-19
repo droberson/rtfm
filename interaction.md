@@ -13,6 +13,7 @@ that can be gleaned isn't immediately apparent.
 - [80 / HTTP](#http)
 - [443 / HTTPS](#http)
 - [1433 / MS-SQL](#ms-sql)
+- [4786 / Cisco Smart Install](#Cisco-Smart-Install)
 
 ## UDP
 
@@ -150,3 +151,7 @@ curl -iX OPTIONS allports.alpha-draconis.com
 - Sometimes, applications have default database credentials or can be discovered. Poke around.
 - If you manage to access the database, try to find login/user tables. 
 - May be able to use xp_cmdshell stored procedure to execute shell commands as the database user.
+
+## Cisco Smart Install
+- https://github.com/Sab0tag3d/SIET
+- Can dump the device's configuration, modify existing configuration, and possibly push firmware updates remotely with no authentication.
