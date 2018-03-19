@@ -25,6 +25,8 @@ Windows comes with a feature called "Simple TCP/IP Services" which includes an e
 character generator, quote of the day, and daytime service. This is mostly for testing network
 connectivity and serve no real purpose beyond testing from what I can tell.
 
+The quotes can be changed to Mike "Kid Dynamite" Tyson quotes by editing %systemroot%\System32\Drivers\Etc\Quotes
+
 ## Echo
 - _nc host_here 7_
 - Pretty useless, but present for network troubleshooting purposes on older hosts.
