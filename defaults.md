@@ -4,7 +4,22 @@ Product/Software | Service | Username | Password | Remarks
 ---------------- | ------- | -------- | -------- | -------
 Apache Tomcat | http | tomcat | tomcat |
 Apache Tomcat | http | manager | manager |
-APC (multiple)  | http | apc | apc |
+Apache Tomcat | http | tomcat | none |
+Apache Tomcat | http | ADMIN | ADMIN |
+Apache Tomcat | http | admin | admin |
+Apache Tomcat | http | admin | password |
+Apache Tomcat | http | ovwebusr |  OvW&ast;busr1 |
+Apache Tomcat | http | j2deployer | j2deployer |
+Apache Tomcat | http | tomcat | s3cret |
+Apache Tomcat | http | cxsdk | kdsxc |
+Apache Tomcat | http | xampp | xampp |
+Apache Tomcat | http | QCC | QLogic66 |
+Apache Tomcat | http | root | owaspbwa |
+Apache Tomcat | http | role1 | tomcat |
+Apache Tomcat | http | both | tomcat |
+Apache Tomcat | http | root | changethis |
+Apache Tomcat | http | admin | changethis |
+APC (multiple) | http | apc | apc |
 ConnectUPS Web/SNMP Card | http | admin | admin |
 ConnectUPS Web/SNMP Card | telnet | admin | admin |
 Emerson Network Power IntelliSlot Web Card | telnet | Liebert | Liebert |
