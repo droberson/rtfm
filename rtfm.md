@@ -618,6 +618,12 @@ openssl s_client -connect host:port
 
 # ESXi
 
+## Release/Build information
+This site has an aggregated list of patches for each version of ESXi and instructions
+for patching:
+
+https://esxi-patches.v-front.de/
+
 ## Getting version info
 ```
 curl -k https://HOST_HERE/dyndata.js
