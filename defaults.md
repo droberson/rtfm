@@ -34,6 +34,7 @@ HID Fargo printers (multiple) | telnet | root | NO PASSWORD |
 HID Fargo printers (multiple) | telnet | guest | NO PASSWORD |
 Honeywell BNA (multiple) | telnet | root | NO PASSWORD |
 Lantronix MSS100 | http | NO USERNAME | system |
+MikroTik RB260GS | http | admin | NO PASSWORD | http://192.168.88.1 -- must manually set client IP when plugged into the switch
 Motorola FX9500 | ssh | cliuser | NO PASSWORD | reader.login( login=factory, pwd=HERCf95*..)
 OPNSense | user account | root | opnsense |
 Perle 833 Access Servers | ??? | superusr | NO PASSWORD | Haven't verified; pulled from manufacturer's website.
