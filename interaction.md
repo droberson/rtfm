@@ -10,6 +10,8 @@ that can be gleaned isn't immediately apparent.
 - [22 / SSH](#ssh)
 - [23 / Telnet](#telnet)
 - [25 / SMTP](#smtp)
+- [80 / HTTP](#http)
+- [443 / HTTPS](#http)
 - [1433 / MS-SQL](#ms-sql)
 
 ## UDP
@@ -90,6 +92,44 @@ asdf
 quit
 221 2.0.0 Bye
 ```
+
+## HTTP
+- Use a browser or curl.
+- Get server information with curl:
+```
+curl -I http://host_here
+```
+- If the site is running SSL/TLS (https), use -k flag with curl for server banner:
+```
+curl -kI https://host_here
+```
+- Can use netcat if its not using SSL:
+```
+nc host 80
+GET / HTTP/1.0 ### PRESS ENTER TWICE
+```
+- Can use HTTP/1.1 for a persistent connection:
+```
+nc host 80
+GET / HTTP/1.1 ### PRESS ENTER TWICE
+GET /robots.txt HTTP/1.1 ### PRESS ENTER TWICE
+```
+- Determine which options are available (doesn't always work!):
+```
+curl -iX OPTIONS allports.alpha-draconis.com
+```
+- Usually on port 80, but commonly found on alternative ports.
+- Multiple instances of HTTP servers can be found on a single host, all running different software
+- Huge field of study; dozens of vulnerability classes
+- nikto is a fast and noisy web vulnerability scanner
+- robots.txt may reveal useful information.
+- archive.org may have a historical archive of a public site that may be useful during reconniassance.
+- dirb attempts to find directories such as /backup, /dev, /secret, etc
+- Check for editor scratch files: /index.html~, /#index.html#
+- Check for .old, .bak, .backup, etc: /index.html.old, /index.html.bak, ... This may reveal source code for the web page.
+- Check for a .git directory
+- Google dorking
+- View cached copies to avoid being logged visiting a site.
 
 ## SNMP
 - _snmpget_ and _snmpwalk_ commands
