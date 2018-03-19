@@ -125,7 +125,11 @@ curl -iX OPTIONS allports.alpha-draconis.com
 - robots.txt may reveal useful information.
 - archive.org may have a historical archive of a public site that may be useful during reconniassance.
 - dirb attempts to find directories such as /backup, /dev, /secret, etc
-- Check for editor scratch files: /index.html~, /#index.html#
+- Check for WebDAV:
+    - OPTIONS method
+    - PROPFIND method
+    - If found, interact with WebDAV using cadaver
+- Check for editor scratch files: /index.html~, /#index.html#, ...
 - Check for .old, .bak, .backup, etc: /index.html.old, /index.html.bak, ... This may reveal source code for the web page.
 - Check for a .git directory
 - Google dorking
