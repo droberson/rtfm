@@ -13,7 +13,7 @@ that can be gleaned isn't immediately apparent.
 - [80 / HTTP](#http)
 - [443 / HTTPS](#http)
 - [1433 / MS-SQL](#ms-sql)
-- [4786 / Cisco Smart Install](#Cisco-Smart-Install)
+- [4786 / Cisco Smart Install](#cisco-smart-install)
 
 ## UDP
 
