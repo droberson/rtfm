@@ -14,6 +14,7 @@ that can be gleaned isn't immediately apparent.
 - [443 / HTTPS](#http)
 - [1433 / MS-SQL](#ms-sql)
 - [4786 / Cisco Smart Install](#cisco-smart-install)
+- [44818 / EtherNet-IP](#ethernet-ip)
 
 ## UDP
 
@@ -154,4 +155,11 @@ curl -iX OPTIONS allports.alpha-draconis.com
 
 ## Cisco Smart Install
 - https://github.com/Sab0tag3d/SIET
-- Can dump the device's configuration, modify existing configuration, and possibly push firmware updates remotely with no authentication.
+- Can dump the device's configuration, modify existing configuration, and possibly firmware updates remotely with no authentication.
+
+## EtherNet IP
+- https://en.wikipedia.org/wiki/EtherNet/IP
+- Used in ICS/SCADA stuff
+- https://github.com/EIPStackGroup/OpENer has an open source EtherNet IP stack.
+- https://github.com/digitalbond/Redpoint has ICS/SCADA enumeration scripts
+- TODO: explore this further. 
