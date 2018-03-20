@@ -41,9 +41,14 @@ Epoch to human readable UTC:
 date -ud @1521050305
 ```
 
-On Mac/BSD:
+Epoch to human readable Mac/BSD:
 ```
 date -r 1521050305
+```
+
+Epoc to human readable UTC Mac/BSD:
+```
+date -ur 1521050305
 ```
 
 # Linux Virtual Interfaces
