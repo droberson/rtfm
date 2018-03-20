@@ -4,7 +4,6 @@ Here are some notes about interacting with various services. Often, the correct 
 that can be gleaned isn't immediately apparent.
 
 ## TCP
-
 - [7 / echo](#echo)
 - [21 / FTP](#ftp)
 - [22 / SSH](#ssh)
@@ -19,16 +18,15 @@ that can be gleaned isn't immediately apparent.
 - [44818 / EtherNet-IP](#ethernet-ip)
 
 ## UDP
-
 - [161 / SNMP](#snmp)
 
 ## ICMP
-- [ICMP](#icmp)
+- [ICMP](#icmp-notes)
 
 ## Simple TCP/IP Services
 Windows comes with a feature called "Simple TCP/IP Services" which includes an echo, discard,
 character generator, quote of the day, and daytime service. This is mostly for testing network
-connectivity and serve no real purpose beyond testing from what I can tell.
+connectivity and serves no real purpose beyond testing from what I can tell.
 
 The quotes can be changed to Mike "Kid Dynamite" Tyson quotes by editing %systemroot%\System32\Drivers\Etc\Quotes
 
@@ -224,11 +222,15 @@ curl -iX OPTIONS allports.alpha-draconis.com
 - https://github.com/digitalbond/Redpoint has ICS/SCADA enumeration scripts
 - TODO: explore this further. 
 
-## ICMP
+## ICMP Notes
 - Commonly used to test connectivity via _ping_ (ICMP ECHO)
+- Many administrators erroneously think that ICMP is solely for the ping and traceroute utilities.
+- Windows tracert uses ICMP, Linux and BSD traceroute uses UDP.
 - Can close existing TCP sessions with specially crafted ICMP unreachable packets (blind connection reset attack): https://www.owasp.org/images/2/2b/ICMP_Attacks.pdf
 - Multiple DoS attacks exist that use ICMP: Smurf, Black Nurse, WinNuke, ...
 - Can potentially identify which software is pinging you. Linux and Windows use different patterns in their payloads. Some monitoring software advertises itself within the payload. Check this with a sniffer.
 - Can be used for transferring files and shell services if an organization isn't watching ICMP traffic:
     - https://github.com/droberson/icmp-exfil
     - https://github.com/JeremyNGalloway/LOKI2
+- Had a tool similar to this used against my team successfully in an attack/defend CTF:
+    - https://github.com/droberson/icmp-backdoor
