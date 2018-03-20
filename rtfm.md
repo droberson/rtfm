@@ -30,6 +30,22 @@ at the >> prompt: screenshot --fullpage <filename>
 - Use [shutter](http://shutter-project.org/). Its one of the best
 screenshot tools I've found. Has editing and upload capabilities.
 
+# Time and Date Conversions
+Epoch to human readable:
+```
+date -d @1521050305
+```
+
+Epoch to human readable UTC:
+```
+date -ud @1521050305
+```
+
+On Mac/BSD:
+```
+date -r 1521050305
+```
+
 # Linux Virtual Interfaces
 I had a scenario where I found some NFS exports on a network, but they were restricted
 to a handful of IP addresses which weren't mine. Several of the IP addresses were not
