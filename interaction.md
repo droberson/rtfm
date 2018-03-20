@@ -10,6 +10,7 @@ that can be gleaned isn't immediately apparent.
 - [22 / SSH](#ssh)
 - [23 / Telnet](#telnet)
 - [25 / SMTP](#smtp)
+- [79 / Finger](#finger)
 - [80 / HTTP](#http)
 - [443 / HTTPS](#http)
 - [1433 / MS-SQL](#ms-sql)
@@ -96,6 +97,55 @@ asdf
 250 2.0.0 Ok: queued as 6B8F243186
 quit
 221 2.0.0 Bye
+```
+
+## Finger
+- Not used very often anymore, but still can be found on legacy and newer embedded systems.
+- Can gather useful information such as names, addresses, phone numbers, email addresses, login shell, last time they logged in, ...
+- Users of a system with fingerd can create a .plan file in their home directory to display after their GECOS information. People used to put information such as their schedules and if they were on vacation in here. This practice is not very common anymore.
+
+- Display informational page or all logged in users (depends on fingerd implementation):
+```
+finger @IP_ADDRESS_HERE
+```
+
+- Display information about a specific user:
+```
+finger user@IP_ADDRESS_HERE
+```
+
+- Some fingerd implementations support ambiguous searching. You can use this to gather a user list on a system:
+```
+finger a@IP_ADDRESS_HERE
+finger b@IP_ADDRESS_HERE
+...
+finger z@IP_ADDRESS_HERE
+```
+
+- You can also just use netcat:
+```
+nc IP_ADDRESS_HERE 790
+<ENTER>
+...
+all logged in users
+...
+
+nc IP_ADDRESS_HERE 79
+admin<ENTER>
+...
+admin's information
+...
+```
+
+- You can use finger locally:
+```
+% finger daniel
+Login: daniel                           Name: Daniel Roberson
+Directory: /home/daniel                 Shell: /bin/zsh
+On since Tue Mar 20 07:01 (PDT) on pts/0 from 192.168.1.101
+   2 seconds idle
+No mail.
+No Plan.
 ```
 
 ## HTTP
