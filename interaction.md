@@ -13,6 +13,7 @@ that can be gleaned isn't immediately apparent.
 - [80 / HTTP](#http)
 - [443 / HTTPS](#http)
 - [1433 / MS-SQL](#ms-sql)
+- [2049 / NFS](#nfs)
 - [4786 / Cisco Smart Install](#cisco-smart-install)
 - [44818 / EtherNet-IP](#ethernet-ip)
 
@@ -154,6 +155,10 @@ curl -iX OPTIONS allports.alpha-draconis.com
 - Sometimes, applications have default database credentials or can be discovered. Poke around.
 - If you manage to access the database, try to find login/user tables. 
 - May be able to use xp_cmdshell stored procedure to execute shell commands as the database user.
+
+## NFS
+- showmount -e IP_ADDRESS_HERE
+- If the export is available to you, mount -t nfs IP_ADDRESS_HERE:/export /mnt
 
 ## Cisco Smart Install
 - https://github.com/Sab0tag3d/SIET
