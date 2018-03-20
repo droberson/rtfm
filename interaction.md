@@ -124,7 +124,7 @@ finger z@IP_ADDRESS_HERE
 
 - You can also just use netcat:
 ```
-nc IP_ADDRESS_HERE 790
+nc IP_ADDRESS_HERE 79
 <ENTER>
 ...
 all logged in users
