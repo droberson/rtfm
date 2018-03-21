@@ -218,6 +218,7 @@ curl -iX OPTIONS allports.alpha-draconis.com
 
 ## mDNS
 - Uses multicast address 244.0.0.251
+- avahi-browse
 - Responder has the ability to monitor and poison these queries
 - nmap NSE script broadcast-dns-service-discovery can enumerate services on the local network:
 ```
