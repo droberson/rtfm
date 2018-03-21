@@ -53,9 +53,9 @@ The quotes can be changed to Mike "Kid Dynamite" Tyson quotes by editing %system
 ## SSH
 - _ssh_ command.
 - Adding -vvvv to _ssh_ command will show authentication methods, banner string, and encryption algorithms available.
-- Can often be brute forced.
-- Try known/default keys.
-- Search for keys on other systems. You may be able to find an rsync or nagios key that lets you into more systems (see sshady tool).
+- Can often be brute forced. Fail2Ban is useful for mitigating this.
+- Try known/default keys using nmap, ncrack, hydra, medusa, ...
+- Search for keys on other systems. You may be able to find an rsync or nagios key that lets you into more systems (see [sshady](https://github.com/droberson/sshady)).
 - Banner often correlates with distro/release.
 - May be able to run sshd with LD_PRELOAD hook for crypt() or with a custom PAM module to obtain more user's passwords after you've rooted the machine.
 
