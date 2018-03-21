@@ -19,6 +19,7 @@ that can be gleaned isn't immediately apparent.
 
 ## UDP
 - [161 / SNMP](#snmp)
+- [5353 / mDNS](#mdns)
 
 ## ICMP
 - [ICMP](#icmp-notes)
@@ -215,6 +216,18 @@ curl -iX OPTIONS allports.alpha-draconis.com
 - https://github.com/Sab0tag3d/SIET
 - Can dump the device's configuration, modify existing configuration, and possibly firmware updates remotely with no authentication.
 
+## mDNS
+- Uses multicast address 244.0.0.251
+- Responder has the ability to monitor and poison these queries
+- nmap NSE script broadcast-dns-service-discovery can enumerate services on the local network:
+```
+nmap --script=broadcast-dns-service-discovery
+```
+- Alternatively, use dns-service-discovery against a single host:
+```
+nmap -p 5353 -sU --script=dns-service-discovery IP_GOES_HERE
+```
+
 ## EtherNet IP
 - https://en.wikipedia.org/wiki/EtherNet/IP
 - Used in ICS/SCADA stuff
@@ -224,7 +237,7 @@ curl -iX OPTIONS allports.alpha-draconis.com
 
 ## ICMP Notes
 - Commonly used to test connectivity via _ping_ (ICMP ECHO)
-- Many administrators erroneously think that ICMP is solely for the ping and traceroute utilities.
+- Many administrators erroneously think that ICMP is solely for the ping and traceroute utilities. They end up not accounting for ICMP traffic, while focusing on TCP and UDP. This provides an attacker with a mostly unobserved communications path.
 - Windows tracert uses ICMP, Linux and BSD traceroute uses UDP.
 - Can close existing TCP sessions with specially crafted ICMP unreachable packets (blind connection reset attack): https://www.owasp.org/images/2/2b/ICMP_Attacks.pdf
 - Multiple DoS attacks exist that use ICMP: Smurf, Black Nurse, WinNuke, ...
