@@ -637,6 +637,18 @@ python3 -m http.server [<port>]
 openssl s_client -connect host:port
 ```
 
+# Determine when OS was installed
+
+## Windows
+```
+systeminfo |findstr "Install Date"
+```
+
+## Debian/Ubuntu variants
+```
+ls -lt /var/log/installer
+```
+
 # ESXi
 
 ## Release/Build information
