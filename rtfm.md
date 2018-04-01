@@ -476,8 +476,15 @@ Control+a, ] will paste
 # mysql
 
 - Show userlist:
+
+MySQL 5.6 and earlier:
 ```
 select user,host,password from mysql.user;
+```
+
+MySQL 5.7 and later:
+```
+select user,host,authentication_string from mysql.user;
 ```
 
 - Show databases, tables, and other basics:
