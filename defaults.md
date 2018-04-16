@@ -68,6 +68,10 @@ Vicidial | mysql | root | NO PASSWORD |
 Wiegotcha RFID Thief | user account | root | Wiegotcha |
 Wiegotcha RFID Thief | user account | pi | Wiegotcha |
 Xerox WorkCentre | http | admin | 1111 |
+zmodo Cameras/DVRs (multiple) | ??? | admin | NO PASSWORD |
+zmodo Cameras/DVRs (multiple) | ??? | admin | 111111 |
+zmodo Cameras/DVRs (multiple) | ??? | admin | 666666 |
+zmodo Cameras/DVRs (multiple) | ??? | admin | 888888 |
 ZyXEL PK5001Z | telnet | admin | CenturyL1nk | CVE-2016-10401
 ZyXEL PK5001Z | telnet | admin | QwestM0dem |
 ZyXEL PK5001Z | user account | root | zyad5001 | CVE-2016-10401
