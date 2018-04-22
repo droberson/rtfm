@@ -236,3 +236,13 @@ cleanup:
   sendinput ^+{insert}
   return
 ```
+
+## Enable RDP remotely
+- Using psexec
+```
+psexec \\host reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
+```
+- Using remote registry
+```
+reg add "\\host\HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
+```
