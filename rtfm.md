@@ -21,9 +21,21 @@ import -window root -display :0 whatever.png
 ```
 
 ## Firefox
+- From CLI
 ```
-Shift + F2
+firefox --headless --screenshot http://SITE_HERE
+```
+
+- From Developer Toolbar
+```
+Shift + F2 to enter Developer Toolbar
 at the >> prompt: screenshot --fullpage <filename>
+```
+
+## Chrome
+- From CLI
+```
+chrome --headless --screenshot http://SITE_HERE
 ```
 
 ## Linux in general
