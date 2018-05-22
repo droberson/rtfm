@@ -68,7 +68,7 @@ CTF-related resources.
   - [Firefox](https://developer.mozilla.org/en-US/docs/Tools/Web_Console)
 - [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
 - [Burp Suite](https://portswigger.net/burp)
-  -[Smart Buster Plugin](https://github.com/pathetiq/BurpSmartBuster)
+  - [Smart Buster Plugin](https://github.com/pathetiq/BurpSmartBuster)
 - [Nikto](https://cirt.net/Nikto2)
 - Dirbuster (discontinued, but included with Kali and ZAP)
 - [JWT Decoder](https://jwt.io/)
