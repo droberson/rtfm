@@ -2,7 +2,9 @@
 CTF-related resources.
 
 ## Cryptography
-- [Factordb](http://factordb.com/) - Database of large factored numbers
+- [Rapid Tables](https://www.rapidtables.com)
+- [dcode.fr](https://www.dcode.fr/tools-list)
+- [Factordb](http://factordb.com) - Database of large factored numbers
 - [How RSA works](https://simple.wikipedia.org/wiki/RSA_algorithm) - There's always an RSA problem...
 - [HashID](https://github.com/psypanda/hashID) - Identify hash types
 - [John the Ripper](https://github.com/magnumripper/JohnTheRipper) - JtR w/ Jumbo patches
@@ -11,16 +13,19 @@ CTF-related resources.
 - [yafu](https://sourceforge.net/projects/yafu/) - Helps factor large numbers
 - [featherduster](https://github.com/nccgroup/featherduster) - Crypto tools
 - [1xor](https://github.com/droberson/1xor) - Helps solve 1 byte XOR puzzles
+- [Skull Security Wordlists](https://wiki.skullsecurity.org/Passwords)
 
 ## Steganography
+- strings
 - exiftool
-- StegSolve
-- GIMP
-- ImageMagick
+- [StegSolve](http://www.caesum.com/handbook/Stegsolve.jar)
+- [ImageMagick](https://www.imagemagick.org)
 - [TinEye](https://www.tineye.com) - Reverse image search.
-- Google Image Search
-- Sonic Visualizer
-- Magic Eye Viewer (can do this in GIMP too)
+- [GIMP](https://www.gimp.org)
+- [Sonic Visualizer](https://www.sonicvisualiser.org)
+- Stereograms (Magic eye puzzles where you look at pictures cross eyed to see a boat or something equally stupid)
+  - [Magic Eye Viewer](http://magiceye.ecksdee.co.uk)
+  - [GIMP](https://georgik.rocks/how-to-decode-stereogram-by-gimp)
 
 ## Forensics
 - file
@@ -28,35 +33,53 @@ CTF-related resources.
 - foremost
 - strings
 - Wireshark
+- [Volatility](http://www.volatilityfoundation.org)
 - Emacs hexl-mode or vi with xxd as hex editors
 
 ## Reverse Engineering
 - GDB
 - radare2
+- [Binary Ninja](https://binary.ninja)
+- [IDA](https://www.hex-rays.com/products/ida/support/download_freeware.shtml)
 - objdump
 - strace
 - ltrace
 - Uncompyle2
-- Uncompyle6
+- [Uncompyle6](https://github.com/rocky/python-uncompyle6)
 
 ## Recon
 - DNS tools: dig, host, etc.
-- Whois
+- [Whois](https://whois.icann.org/en)
 - [The Wayback Machine](https://archive.org/)
 - [TinEye](https://www.tineye.com) - Reverse image search.
 - wget/curl one liners
-- nmap
+- Having social media accounts is helpful:
+  - Facebook
+  - Linkedin
+  - Twitter
+  - ...
+- [nmap](https://nmap.org)
+- [Shodan](https://www.shodan.io)
+- [BugMeNot](http://bugmenot.com)
 
 ## Web
 - Browser developer consoles
-- Burp Suite
-- Nikto
-- Dirbuster
+  - [Chrome](https://developers.google.com/web/tools/chrome-devtools)
+  - [Firefox](https://developer.mozilla.org/en-US/docs/Tools/Web_Console)
+- [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
+- [Burp Suite](https://portswigger.net/burp)
+  -[Smart Buster Plugin](https://github.com/pathetiq/BurpSmartBuster)
+- [Nikto](https://cirt.net/Nikto2)
+- Dirbuster (discontinued, but included with Kali and ZAP)
 - [JWT Decoder](https://jwt.io/)
-- sqlmap
+- [sqlmap](http://sqlmap.org)
 
 ## Binary Exploitation
 - [pwntools](https://docs.pwntools.com/en/stable/)
-- pattern create Metasploit modules
+- [pattern](https://github.com/droberson/pattern)
 
 ## Misc
+- Have a machine capable of running VMs with VirtualBox and VMWare Workstation/Player installed before the contest starts.
+- Ability to read Office documents (LibreOffice/MS Office/cloud readers/...)
+- [QR code reader](https://webqr.com)
+- [Barcode reader](https://online-barcode-reader.inliteresearch.com)
