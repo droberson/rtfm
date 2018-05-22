@@ -36,11 +36,14 @@ CTF-related resources.
 - [Volatility](http://www.volatilityfoundation.org)
 - Emacs hexl-mode or vi with xxd as hex editors
 
-## Reverse Engineering
+## Reverse Engineering/Binary Exploitation
+Most of the tools for these two categories overlap.
 - GDB
 - radare2
 - [Binary Ninja](https://binary.ninja)
 - [IDA](https://www.hex-rays.com/products/ida/support/download_freeware.shtml)
+- [pwntools](https://docs.pwntools.com/en/stable/)
+- [pattern](https://github.com/droberson/pattern)
 - objdump
 - strace
 - ltrace
@@ -73,10 +76,6 @@ CTF-related resources.
 - Dirbuster (discontinued, but included with Kali and ZAP)
 - [JWT Decoder](https://jwt.io/)
 - [sqlmap](http://sqlmap.org)
-
-## Binary Exploitation
-- [pwntools](https://docs.pwntools.com/en/stable/)
-- [pattern](https://github.com/droberson/pattern)
 
 ## Misc
 - Have a machine capable of running VMs with VirtualBox and VMWare Workstation/Player installed before the contest starts.
