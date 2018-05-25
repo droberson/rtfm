@@ -13,7 +13,7 @@ export HISTCONTROL=ignorespace
 ```
 Now, if you dont want a command saved to history, prepend it with a space:
 ```
-$  ps aux
+$  ps aux ### notice the extra space before ps
 $ history
 ...
 "ps aux" will not show up here.
@@ -22,6 +22,16 @@ $ history
 
 ### kill -9 $$
 Do this instead of ^D, logout, exit, etc.
+
+### set +/-o history
+Disable history:
+```
+set +o history
+```
+Enable history:
+```
+set -o history
+```
 
 # Screenshots
 ## OS X
