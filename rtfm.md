@@ -1,3 +1,28 @@
+# Shell history
+Here are some ways to avoid entries added to shell history files.
+
+## bash
+### HISTFILE environment variable
+```
+unset HISTFILE
+```
+
+### HISTCONTROL environment variable
+```
+export HISTCONTROL=ignorespace
+```
+Now, if you dont want a command saved to history, prepend it with a space:
+```
+$  ps aux
+$ history
+...
+"ps aux" will not show up here.
+...
+```
+
+### kill -9 $$
+Do this instead of ^D, logout, exit, etc.
+
 # Screenshots
 ## OS X
 - Command-Shift-3: Full screen to desktop
