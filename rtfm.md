@@ -431,31 +431,25 @@ find / -mtime -1 -exec ls -l {} \; 2>/dev/null
 find / -mtime -7 -exec ls -l {} \; 2>/dev/null
 ```
 
-
 # curl
-
 - Get HTTP headers from a site:
 ```
 curl -I http://www.google.com
 ```
-
 - Get HTTP headers from a site that is using SSL:
 ```
 curl -kI https://www.google.com
 ```
-
 - Display info about your public IP:
 ```
 curl ipinfo.io
 ```
-
 - Extract email addresses from URL:
 ```
 curl http://www.foo.com/whatever.html 2>/dev/null        \
 | grep -Eio '\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b' \
 | sort | uniq
 ```
-
 - Extract anchors from URL (thanks bashitsu!). This is very useful for
   getting a basic layout of a site, fingerprinting software, and much
   more:
@@ -465,14 +459,12 @@ curl http://www.foo.com 2>/dev/null       \
 | grep -Eo "[\"'].*"                      \
 | cut -c2- | sort | uniq
 ```
-
 - Extract a set of unique words from a site. This is sometimes helpful
   in making dictionaries to attack a target with. This requires the
   'html2text' utility:
 ```
 curl http://www.foo.com 2>/dev/null | html2text | tr " " "\n" | sort | uniq
 ```
-
 - Attempt to pull names from a site. This isn't foolproof, as the
   output will still have to be scoured. (Thanks again, bashitsu!):
 ```
@@ -483,7 +475,6 @@ curl http://www.foo.com 2>/dev/null        \
            -e "$CAPWORD $CAPWORD $CAPWORD" \
 | sort | uniq -c
 ```
-
 - Extract phone numbers from a site:
 ```
 curl http://www.foo.com 2>/dev/null \
@@ -620,14 +611,12 @@ echo <rot13string> |tr a-zA-Z n-za-mN-ZA-M
 ```
 
 # Wardriving
-
 ## Make your laptop speak ESSIDs while roaming around (stolen from @climagic on Twitter)
 ```
 while :;do iwlist wlan0 scan |awk -F\" '/ESSID/{print $2}' |espeak;done
 ```
 
 # iptables
-
 ## Basic Blocking
 
 ### All traffic from a host
@@ -692,8 +681,22 @@ python -m SimpleHTTPServer [<port>]
 python3 -m http.server [<port>]
 ```
 
-# OpenSSL
+### HTTPS! (Python2)
+- First, create a certificate:
+```
+openssl req -new -x509 -keyout cert.pem -out cert.pem -days 365 -nodes
+```
+- Next, save this and run:
+```
+from BaseHTTPServer import HTTPServer
+from SimpleHTTPServer import SimpleHTTPRequestHandler
+from ssl import wrap_socket
+httpd = HTTPServer(('0.0.0.0', 4443), SimpleHTTPRequestHandler)
+httpd.socket = wrap_socket (httpd.socket, server_side=True, certfile='cert.pem')
+httpd.serve_forever()
+```
 
+# OpenSSL
 ## Connect to service using SSL
 ```
 openssl s_client -connect host:port
