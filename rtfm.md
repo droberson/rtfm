@@ -670,26 +670,38 @@ dd if=/dev/whatever bs=65535 conv=noerror,sync | ssh -C user@host "cat >image.dd
 ```
 
 ## Using Python's built in HTTP servers
-
 ### Python2
+#### Without SSL
 ```
 python -m SimpleHTTPServer [<port>]
 ```
-
-### Python3
-```
-python3 -m http.server [<port>]
-```
-
-### HTTPS! (Python2)
+#### HTTPS!
 - First, create a certificate:
 ```
 openssl req -new -x509 -keyout cert.pem -out cert.pem -days 365 -nodes
 ```
-- Next, save this and run:
+- Next, run this:
 ```
 from BaseHTTPServer import HTTPServer
 from SimpleHTTPServer import SimpleHTTPRequestHandler
+from ssl import wrap_socket
+httpd = HTTPServer(('0.0.0.0', 4443), SimpleHTTPRequestHandler)
+httpd.socket = wrap_socket (httpd.socket, server_side=True, certfile='cert.pem')
+httpd.serve_forever()
+```
+### Python3
+#### Without SSL
+```
+python3 -m http.server [<port>]
+```
+#### HTTPS!
+- First, create a certificate:
+```
+openssl req -new -x509 -keyout cert.pem -out cert.pem -days 365 -nodes
+```
+- Next, run this:
+```
+from http.server import HTTPServer, SimpleHTTPRequestHandler
 from ssl import wrap_socket
 httpd = HTTPServer(('0.0.0.0', 4443), SimpleHTTPRequestHandler)
 httpd.socket = wrap_socket (httpd.socket, server_side=True, certfile='cert.pem')
@@ -703,19 +715,16 @@ openssl s_client -connect host:port
 ```
 
 # Determine when OS was installed
-
 ## Windows
 ```
 systeminfo |findstr "Install Date"
 ```
-
 ## Debian/Ubuntu variants
 ```
 ls -lt /var/log/installer
 ```
 
 # ESXi
-
 ## Release/Build information
 This site has an aggregated list of patches for each version of ESXi and instructions
 for patching:
