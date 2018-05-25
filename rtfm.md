@@ -3,8 +3,16 @@ Here are some ways to avoid entries added to shell history files.
 
 ## bash
 ### HISTFILE environment variable
+If this is not set or the file isn't writeable, history won't be saved on exit.
+
+Unsetting it:
 ```
 unset HISTFILE
+```
+
+Non-writeable file:
+```
+export HISTFILE="/dev/null"
 ```
 
 ### HISTCONTROL environment variable
