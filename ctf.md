@@ -18,6 +18,7 @@ CTF-related resources.
 ## Steganography
 - strings
 - exiftool
+- outguess
 - [StegSolve](http://www.caesum.com/handbook/Stegsolve.jar)
 - [ImageMagick](https://www.imagemagick.org)
 - [TinEye](https://www.tineye.com) - Reverse image search.
