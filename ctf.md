@@ -83,3 +83,4 @@ Most of the tools for these two categories overlap.
 - Ability to read Office documents (LibreOffice/MS Office/cloud readers/...)
 - [QR code reader](https://webqr.com)
 - [Barcode reader](https://online-barcode-reader.inliteresearch.com)
+- [Online Character Recognition](https://www.free-ocr.com/) - Converts pictures of text to text you can use on a computer.
