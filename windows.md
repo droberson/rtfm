@@ -20,14 +20,14 @@ systeminfo |findstr OS
 
 ## Command Line Equivalents from Linux to Windows
 
-| Purpose      		          | Linux	      | Windows               |
+| Purpose      		        | Linux	      | Windows               |
 | ------------------------- | ----------- | --------------------- |
-| Directory list    	      | ls          | dir                   |
+| Directory list    	    | ls          | dir                   |
 | Display file's contents   | cat         | type                  |
 | Display file with a pager | less file   | type file &#124; more |
-| Copy file    	      	    | cp 	        | copy                  |
-| Delete file	              | rm          | del	                  |
-| Rename file	              | mv          | ren	                  |
+| Copy file    	      	    | cp 	      | copy                  |
+| Delete file	            | rm          | del	                  |
+| Rename file	            | mv          | ren	                  |
 | Show network interfaces   | ifconfig -a | ipconfig /all         |
 | Show running processes    | ps          | tasklist              |
 | Search for strings        | grep        | findstr &#124; find   |
@@ -69,6 +69,30 @@ Further reading:
 
 - https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions
 - https://msdn.microsoft.com/en-us/library/ms537503%28v=vs.85%29.aspx
+
+## Get password lockout threshold/duration.
+```
+net accounts
+```
+
+This will give you output similar to this:
+```
+Force user logoff how long after time expires?:       Never
+Minimum password age (days):                          1
+Maximum password age (days):                          90
+Minimum password length:                              7
+Length of password history maintained:                24
+Lockout threshold:                                    9
+Lockout duration (minutes):                           30
+Lockout observation window (minutes):                 30
+Computer role:                                        WORKSTATION
+The command completed successfully.
+```
+
+This is very useful information to have when password spraying or launching brute
+force attacks. Basically, configure your tool to send _Lockout threshold - 1_ attempts
+every _Lockout observation window_ minutes. This will avoid accounts being locked out,
+which would reveal your attack.
 
 ## Reset a Windows 10 machine 
 1. Start your PC and select the Power icon in the bottom right-hand corner of the lock screen.
