@@ -85,6 +85,11 @@ chrome --headless --screenshot http://SITE_HERE
 - Use [shutter](http://shutter-project.org/). Its one of the best
 screenshot tools I've found. Has editing and upload capabilities.
 
+# Hiding processes
+```
+exec -a newname ./program
+```
+
 # Time and Date Conversions
 Epoch to human readable:
 ```
