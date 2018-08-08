@@ -68,6 +68,7 @@ Vicidial | http | 6666 | 1234 |
 Vicidial | mysql | root | NO PASSWORD |
 Wiegotcha RFID Thief | user account | root | Wiegotcha |
 Wiegotcha RFID Thief | user account | pi | Wiegotcha |
+Windows Modern IE VMs (multiple) | user account | IEUser | Passw0rd! |
 Xerox WorkCentre | http | admin | 1111 |
 zmodo Cameras/DVRs (multiple) | ??? | admin | NO PASSWORD |
 zmodo Cameras/DVRs (multiple) | ??? | admin | 111111 |
