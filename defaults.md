@@ -66,6 +66,8 @@ Transition Networks CPSMM100-120 | telnet | NO USERNAME | private |
 Vicidial | Asterisk Manager | cron | 1234 |
 Vicidial | http | 6666 | 1234 |
 Vicidial | mysql | root | NO PASSWORD |
+Vyatta | user account | vyatta | vyatta |
+VyOS | user account | vyos | vyos |
 Wiegotcha RFID Thief | user account | root | Wiegotcha |
 Wiegotcha RFID Thief | user account | pi | Wiegotcha |
 Windows Modern IE VMs (multiple) | user account | IEUser | Passw0rd! |
