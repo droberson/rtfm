@@ -28,7 +28,7 @@ Fargo DTC4250e | http | root | NO PASSWORD |
 Firebird Database | TCP/3050 | sysdba | masterkey | flamerobin package on Kali to interact with these databases.
 FortiOS | ssh | Fortimanager_Access | FGTAbc11*xy+Qqz27 | Hard-coded admin credentials versions 4.3.0 - 4.3.16, 5.0.0 - 5.0.7
 Gitlab | http | root | 5iveL!fe |
-GL.inet WiFi routers (multiple) | wifi | GL-XXX | n/a | goodlife | WiFi default password.
+GL.inet WiFi routers (multiple) | wifi APs named GL-XXX | n/a | goodlife | WiFi default password.
 Grandstream phones/SIP gateways | http(s) | admin | admin |
 Grandstream phones/SIP gateways | telnet | admin | admin | 
 Graylog Appliance (OVA) | user account | ubuntu | ubuntu |
