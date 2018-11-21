@@ -270,3 +270,13 @@ psexec \\host reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Termi
 ```
 reg add "\\host\HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
 ```
+
+## netsh packet captures
+1. Perform netsh trace
+```
+netsh trace start capture=yes
+... do what you need to do for network traffic ...
+netsh trace stop
+```
+2. Open this with Microsoft Message Analyzer
+3. Export as pcap (File -> Save As -> Export)
